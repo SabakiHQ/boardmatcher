@@ -4,7 +4,9 @@
   "description": "Finds patterns and shapes in Go board arrangements.",
   "main": "index.js",
   "scripts": {
-    "test": "tap tests/*.test.js"
+    "test": "tap tests/*.test.js",
+    "build": "node build",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
