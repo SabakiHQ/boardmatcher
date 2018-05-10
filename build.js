@@ -6,15 +6,15 @@ let shapes = []
 
 for (let subtree of tree.subtrees) {
     let node = subtree.nodes[0]
-    let anchors = node.MA.map(x => [...sgf.parseVertex(x), node.AB.includes(x) ? 1 : -1])
+    let anchors = node.MA.map(x => [sgf.parseVertex(x), node.AB.includes(x) ? 1 : -1])
     let vertices = ['AW', 'CR', 'AB']
-        .map((x, i) => (node[x] || []).map(y => [...sgf.parseVertex(y), i - 1]))
+        .map((x, i) => (node[x] || []).map(y => [sgf.parseVertex(y), i - 1]))
         .reduce((acc, x) => [...acc, ...x], [])
 
     let data = {}
 
     if ('C' in node) {
-        for (let [key, value] of node.C[0].trim().split(', ').map(x => x.split(': '))) {
+        for (let [key, value] of node.C[0].trim().split('\n').map(x => x.trim().slice(2).split(': '))) {
             data[key] = value
         }
     }

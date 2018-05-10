@@ -1,8 +1,8 @@
-const shapeLibrary = require('../data/shapes.json')
-
 let mod = (x, m) => (x % m + m) % m
 let equals = v => w => w[0] === v[0] && w[1] === v[1]
 let hasVertex = ([x, y], width, height) => x >= 0 && y >= 0 && x < width && y < height
+
+exports.shapeLibrary = require('../data/shapes.json')
 
 exports.getSymmetries = function([x, y]) {
     return [
@@ -25,7 +25,7 @@ exports.cornerMatch = function(vertices, board) {
     let hypotheses = Array(8).fill(true)
     let hypothesesInvert = Array(8).fill(true)
 
-    for (let [x, y, sign] of vertices) {
+    for (let [[x, y], sign] of vertices) {
         let representatives = exports.getBoardSymmetries(board, [x, y])
 
         for (let i = 0; i < hypotheses.length; i++) {
@@ -54,27 +54,27 @@ exports.shapeMatch = function(shape, board, [x, y]) {
     if (sign === 0) return null
     let equalsVertex = equals([x, y])
 
-    for (let anchor of shape.anchors) {
+    for (let [[ax, ay], as] of shape.anchors) {
         let hypotheses = Array(8).fill(true)
         let i = 0
 
         if (shape.size != null && (width !== height || width !== +shape.size))
             continue
 
-        if (shape.type === 'corner' && !exports.getBoardSymmetries(board, anchor.slice(0, 2)).some(equalsVertex))
+        if (shape.type === 'corner' && !exports.getBoardSymmetries(board, [ax, ay]).some(equalsVertex))
             continue
 
-        // Hypothesize [x, y] === anchor
+        // Hypothesize [x, y] === [ax, ay]
 
-        for (let [vx, vy, s] of shape.vertices) {
-            let diff = [vx - anchor[0], vy - anchor[1]]
+        for (let [[vx, vy], vs] of shape.vertices) {
+            let diff = [vx - ax, vy - ay]
             let symm = exports.getSymmetries(diff)
 
             for (let k = 0; k < symm.length; k++) {
                 if (!hypotheses[k]) continue
                 let [wx, wy] = [x + symm[k][0], y + symm[k][1]]
 
-                if (!hasVertex([wx, wy], width, height) || board[wy][wx] !== s * sign * anchor[2])
+                if (!hasVertex([wx, wy], width, height) || board[wy][wx] !== vs * sign * as)
                     hypotheses[k] = false
             }
 
@@ -82,7 +82,7 @@ exports.shapeMatch = function(shape, board, [x, y]) {
             if (i < 0) break
         }
 
-        if (i >= 0) return [i, sign !== anchor[2]]
+        if (i >= 0) return [i, sign !== as]
     }
 
     return null
