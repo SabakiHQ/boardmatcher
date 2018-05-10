@@ -6,7 +6,7 @@
   "scripts": {
     "test": "tap tests/*.test.js",
     "build": "node build",
-    "postinstall": "npm run build"
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
