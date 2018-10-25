@@ -9,9 +9,7 @@ function getSymmetries([x, y]) {
     ]
 }
 
-function getBoardSymmetries(board, vertex) {
-    let height = board.length
-    let width = board.length === 0 ? 0 : board[0].length
+function getBoardSymmetries(vertex, width, height) {
     let [mx, my] = [width - 1, height - 1]
 
     return getSymmetries(vertex)
@@ -20,11 +18,13 @@ function getBoardSymmetries(board, vertex) {
 }
 
 exports.cornerMatch = function(vertices, board) {
+    let height = board.length
+    let width = board.length === 0 ? 0 : board[0].length
     let hypotheses = Array(8).fill(true)
     let hypothesesInvert = Array(8).fill(true)
 
     for (let [[x, y], sign] of vertices) {
-        let representatives = getBoardSymmetries(board, [x, y])
+        let representatives = getBoardSymmetries([x, y], width, height)
 
         for (let i = 0; i < hypotheses.length; i++) {
             let [x, y] = representatives[i]
@@ -59,7 +59,7 @@ exports.shapeMatch = function(shape, board, [x, y]) {
         if (shape.size != null && (width !== height || width !== +shape.size))
             continue
 
-        if (shape.type === 'corner' && !getBoardSymmetries(board, [ax, ay]).some(equalsVertex))
+        if (shape.type === 'corner' && !getBoardSymmetries([ax, ay], width, height).some(equalsVertex))
             continue
 
         // Hypothesize [x, y] === [ax, ay]
