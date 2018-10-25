@@ -1,7 +1,8 @@
 const fs = require('fs')
+const {join} = require('path')
 const sgf = require('@sabaki/sgf')
 
-let tree = sgf.parseFile(`${__dirname}/data/shapes.sgf`)[0]
+let tree = sgf.parseFile(join(__dirname, 'data', 'shapes.sgf'))[0]
 let shapes = []
 
 for (let subtree of tree.subtrees) {
@@ -26,4 +27,4 @@ for (let subtree of tree.subtrees) {
     }, data))
 }
 
-fs.writeFileSync(`${__dirname}/data/shapes.json`, JSON.stringify(shapes))
+fs.writeFileSync(join(__dirname, 'data', 'shapes.json'), JSON.stringify(shapes))
