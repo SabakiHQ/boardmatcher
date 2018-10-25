@@ -17,7 +17,7 @@ function getBoardSymmetries(vertex, width, height) {
         .filter(v => hasVertex(v, width, height))
 }
 
-exports.cornerMatch = function(vertices, data) {
+exports.cornerMatch = function(data, vertices) {
     let height = data.length
     let width = data.length === 0 ? 0 : data[0].length
     let hypotheses = Array(8).fill(true)
@@ -43,7 +43,7 @@ exports.cornerMatch = function(vertices, data) {
     return i < 8 ? [i, false] : [i - 8, true]
 }
 
-exports.shapeMatch = function(shape, data, [x, y]) {
+exports.shapeMatch = function(data, [x, y], shape) {
     let height = data.length
     let width = data.length === 0 ? 0 : data[0].length
     if (!hasVertex([x, y], width, height)) return null
