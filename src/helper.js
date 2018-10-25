@@ -23,6 +23,21 @@ exports.getLiberties = function([x, y], data, visited = [], result = []) {
     return result
 }
 
+exports.getSymmetries = function([x, y]) {
+    return [
+        [x, y], [-x, y], [x, -y], [-x, -y],
+        [y, x], [-y, x], [y, -x], [-y, -x]
+    ]
+}
+
+exports.getBoardSymmetries = function(vertex, width, height) {
+    let [mx, my] = [width - 1, height - 1]
+
+    return exports.getSymmetries(vertex)
+        .map(([x, y]) => [exports.mod(x, mx), exports.mod(y, my)])
+        .filter(v => hasVertex(v, width, height))
+}
+
 exports.getUnnamedHoshis = function(width, height) {
     if (Math.min(width, height) < 6) return []
 

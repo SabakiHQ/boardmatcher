@@ -1,21 +1,12 @@
-const {mod, equals, hasVertex, getNeighbors, getLiberties, getUnnamedHoshis} = require('./helper')
-
-exports.shapeLibrary = require('../data/shapes.json')
-
-function getSymmetries([x, y]) {
-    return [
-        [x, y], [-x, y], [x, -y], [-x, -y],
-        [y, x], [-y, x], [y, -x], [-y, -x]
-    ]
-}
-
-function getBoardSymmetries(vertex, width, height) {
-    let [mx, my] = [width - 1, height - 1]
-
-    return getSymmetries(vertex)
-        .map(([x, y]) => [mod(x, mx), mod(y, my)])
-        .filter(v => hasVertex(v, width, height))
-}
+const {
+    equals,
+    hasVertex,
+    getNeighbors,
+    getLiberties,
+    getSymmetries,
+    getBoardSymmetries,
+    getUnnamedHoshis
+} = require('./helper')
 
 exports.cornerMatch = function(data, vertices) {
     let height = data.length
@@ -92,7 +83,7 @@ exports.nameMove = function(data, sign, [x, y], {shapes = null} = {}) {
     let oldSign = data[y][x]
 
     if (oldSign !== 0 || !hasVertex([x, y], width, height)) return 'Pass'
-    if (shapes == null) shapes = exports.shapeLibrary
+    if (shapes == null) shapes = require('../data/shapes.json')
 
     let neighbors = getNeighbors([x, y], width, height)
 
