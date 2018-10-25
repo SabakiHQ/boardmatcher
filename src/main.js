@@ -1,22 +1,20 @@
-let mod = (x, m) => (x % m + m) % m
-let equals = v => w => w[0] === v[0] && w[1] === v[1]
-let hasVertex = ([x, y], width, height) => x >= 0 && y >= 0 && x < width && y < height
+const {mod, equals, hasVertex} = require('./helper')
 
 exports.shapeLibrary = require('../data/shapes.json')
 
-exports.getSymmetries = function([x, y]) {
+function getSymmetries([x, y]) {
     return [
         [x, y], [-x, y], [x, -y], [-x, -y],
         [y, x], [-y, x], [y, -x], [-y, -x]
     ]
 }
 
-exports.getBoardSymmetries = function(board, vertex) {
+function getBoardSymmetries(board, vertex) {
     let height = board.length
     let width = board.length === 0 ? 0 : board[0].length
     let [mx, my] = [width - 1, height - 1]
 
-    return exports.getSymmetries(vertex)
+    return getSymmetries(vertex)
         .map(([x, y]) => [mod(x, mx), mod(y, my)])
         .filter(v => hasVertex(v, width, height))
 }
@@ -26,7 +24,7 @@ exports.cornerMatch = function(vertices, board) {
     let hypothesesInvert = Array(8).fill(true)
 
     for (let [[x, y], sign] of vertices) {
-        let representatives = exports.getBoardSymmetries(board, [x, y])
+        let representatives = getBoardSymmetries(board, [x, y])
 
         for (let i = 0; i < hypotheses.length; i++) {
             let [x, y] = representatives[i]
@@ -61,14 +59,14 @@ exports.shapeMatch = function(shape, board, [x, y]) {
         if (shape.size != null && (width !== height || width !== +shape.size))
             continue
 
-        if (shape.type === 'corner' && !exports.getBoardSymmetries(board, [ax, ay]).some(equalsVertex))
+        if (shape.type === 'corner' && !getBoardSymmetries(board, [ax, ay]).some(equalsVertex))
             continue
 
         // Hypothesize [x, y] === [ax, ay]
 
         for (let [[vx, vy], vs] of shape.vertices) {
             let diff = [vx - ax, vy - ay]
-            let symm = exports.getSymmetries(diff)
+            let symm = getSymmetries(diff)
 
             for (let k = 0; k < symm.length; k++) {
                 if (!hypotheses[k]) continue
