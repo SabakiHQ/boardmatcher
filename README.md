@@ -1,2 +1,2 @@
 # boardmatcher
-WIP: Finds patterns and shapes in Go board arrangements.
+WIP: Finds patterns & shapes in Go board arrangements and names moves.
