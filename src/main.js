@@ -17,9 +17,9 @@ function getBoardSymmetries(vertex, width, height) {
         .filter(v => hasVertex(v, width, height))
 }
 
-exports.cornerMatch = function(vertices, board) {
-    let height = board.length
-    let width = board.length === 0 ? 0 : board[0].length
+exports.cornerMatch = function(vertices, data) {
+    let height = data.length
+    let width = data.length === 0 ? 0 : data[0].length
     let hypotheses = Array(8).fill(true)
     let hypothesesInvert = Array(8).fill(true)
 
@@ -29,9 +29,9 @@ exports.cornerMatch = function(vertices, board) {
         for (let i = 0; i < hypotheses.length; i++) {
             let [x, y] = representatives[i]
 
-            if (hypotheses[i] && (board[y] == null || board[y][x] !== sign))
+            if (hypotheses[i] && (data[y] == null || data[y][x] !== sign))
                 hypotheses[i] = false
-            if (hypothesesInvert[i] && (board[y] == null || board[y][x] !== -sign))
+            if (hypothesesInvert[i] && (data[y] == null || data[y][x] !== -sign))
                 hypothesesInvert[i] = false
         }
 
@@ -43,12 +43,12 @@ exports.cornerMatch = function(vertices, board) {
     return i < 8 ? [i, false] : [i - 8, true]
 }
 
-exports.shapeMatch = function(shape, board, [x, y]) {
-    let height = board.length
-    let width = board.length === 0 ? 0 : board[0].length
+exports.shapeMatch = function(shape, data, [x, y]) {
+    let height = data.length
+    let width = data.length === 0 ? 0 : data[0].length
     if (!hasVertex([x, y], width, height)) return null
 
-    let sign = board[y][x]
+    let sign = data[y][x]
     if (sign === 0) return null
     let equalsVertex = equals([x, y])
 
@@ -72,7 +72,7 @@ exports.shapeMatch = function(shape, board, [x, y]) {
                 if (!hypotheses[k]) continue
                 let [wx, wy] = [x + symm[k][0], y + symm[k][1]]
 
-                if (!hasVertex([wx, wy], width, height) || board[wy][wx] !== vs * sign * as)
+                if (!hasVertex([wx, wy], width, height) || data[wy][wx] !== vs * sign * as)
                     hypotheses[k] = false
             }
 
