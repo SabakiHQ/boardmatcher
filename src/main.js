@@ -8,7 +8,7 @@ const {
     getUnnamedHoshis
 } = require('./helper')
 
-exports.cornerMatch = function(data, vertices) {
+exports.matchCorner = function(data, vertices) {
     let height = data.length
     let width = data.length === 0 ? 0 : data[0].length
     let hypotheses = Array(8).fill(true)
@@ -31,10 +31,17 @@ exports.cornerMatch = function(data, vertices) {
     }
 
     let i = [...hypotheses, ...hypothesesInvert].indexOf(true)
-    return i < 8 ? [i, false] : [i - 8, true]
+
+    return {
+        symmetryIndex: i < 8 ? i : i - 8,
+        invert: i >= 8,
+        vertices: vertices.map(([vertex, _]) =>
+            getBoardSymmetries(vertex, width, height)[i < 8 ? i : i - 8]
+        )
+    }
 }
 
-exports.shapeMatch = function(data, [x, y], shape) {
+exports.matchShape = function(data, [x, y], shape) {
     let height = data.length
     let width = data.length === 0 ? 0 : data[0].length
     if (!hasVertex([x, y], width, height)) return null
@@ -71,7 +78,13 @@ exports.shapeMatch = function(data, [x, y], shape) {
             if (i < 0) break
         }
 
-        if (i >= 0) return [i, sign !== as]
+        if (i >= 0) return {
+            symmetryIndex: i,
+            invert: sign !== as,
+            vertices: shape.vertices.map(([vertex, _]) =>
+                getBoardSymmetries(vertex, width, height)[i]
+            )
+        }
     }
 
     return null
