@@ -95,7 +95,8 @@ exports.nameMove = function(data, sign, [x, y], {shapes = null} = {}) {
     let width = data.length === 0 ? 0 : data[0].length
     let oldSign = data[y][x]
 
-    if (oldSign !== 0 || !hasVertex([x, y], width, height)) return 'Pass'
+    if (oldSign !== 0) return null
+    if (!hasVertex([x, y], width, height)) return 'Pass'
     if (shapes == null) shapes = require('../data/shapes.json')
 
     let neighbors = getNeighbors([x, y], width, height)
