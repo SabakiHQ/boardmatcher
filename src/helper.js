@@ -11,7 +11,9 @@ exports.getLiberties = function([x, y], data, visited = [], result = []) {
     let sign = data[y][x]
 
     visited.push([x, y])
-    result.push(...neighbors.filter(([nx, ny]) => data[ny][nx] === 0 && !result.some(equals([nx, ny]))))
+    result.push(...neighbors.filter(([nx, ny]) =>
+        data[ny][nx] === 0 && !result.some(exports.equals([nx, ny]))
+    ))
 
     for (let [nx, ny] of neighbors) {
         if (data[ny][nx] === 0) return [nx, ny]
