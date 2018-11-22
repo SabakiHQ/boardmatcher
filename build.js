@@ -2,26 +2,25 @@ const fs = require('fs')
 const {join} = require('path')
 const sgf = require('@sabaki/sgf')
 
-let tree = sgf.parseFile(join(__dirname, 'data', 'shapes.sgf'))[0]
+let root = sgf.parseFile(join(__dirname, 'data', 'shapes.sgf'))[0]
 let shapes = []
 
-for (let subtree of tree.subtrees) {
-    let node = subtree.nodes[0]
-    let anchors = node.MA.map(x => [sgf.parseVertex(x), node.AB.includes(x) ? 1 : -1])
+for (let node of root.children) {
+    let anchors = node.data.MA.map(x => [sgf.parseVertex(x), node.data.AB.includes(x) ? 1 : -1])
     let vertices = ['AW', 'CR', 'AB']
-        .map((x, i) => (node[x] || []).map(y => [sgf.parseVertex(y), i - 1]))
+        .map((x, i) => (node.data[x] || []).map(y => [sgf.parseVertex(y), i - 1]))
         .reduce((acc, x) => [...acc, ...x], [])
 
     let data = {}
 
-    if ('C' in node) {
-        for (let [key, value] of node.C[0].trim().split('\n').map(x => x.trim().slice(2).split(': '))) {
+    if (node.data.C != null) {
+        for (let [key, value] of node.data.C[0].trim().split('\n').map(x => x.trim().slice(2).split(': '))) {
             data[key] = value
         }
     }
 
     shapes.push(Object.assign({
-        name: node.N[0],
+        name: node.data.N[0],
         anchors,
         vertices
     }, data))
