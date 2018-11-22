@@ -133,7 +133,7 @@ exports.nameMove = function(data, sign, [x, y], {shapes = null} = {}) {
     data[y][x] = sign
 
     for (let shape of shapes) {
-        if (exports.shapeMatch(data, [x, y], shape)) {
+        if (exports.matchShape(data, [x, y], shape)) {
             data[y][x] = oldSign
             return shape.name
         }
