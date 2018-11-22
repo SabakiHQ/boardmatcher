@@ -115,7 +115,7 @@ exports.nameMove = function(data, sign, [x, y], {shapes = null} = {}) {
     // Check atari & capture
 
     for (let [nx, ny] of neighbors) {
-        if (data[ny][nx] === -sign) continue
+        if (data[ny][nx] !== -sign) continue
 
         let libertyCount = getLiberties([nx, ny], data).length
         if (libertyCount === 1) return 'Take'
