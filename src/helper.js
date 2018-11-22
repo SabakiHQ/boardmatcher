@@ -37,7 +37,7 @@ exports.getBoardSymmetries = function(vertex, width, height) {
 
     return exports.getSymmetries(vertex)
         .map(([x, y]) => [exports.mod(x, mx), exports.mod(y, my)])
-        .filter(v => hasVertex(v, width, height))
+        .filter(v => exports.hasVertex(v, width, height))
 }
 
 exports.getUnnamedHoshis = function(width, height) {
