@@ -4,13 +4,13 @@ const {equals, hasVertex, getNeighbors, getLiberties, getUnnamedHoshis} = requir
 module.exports = function(data, sign, vertex, {shapes = null} = {}) {
     let height = data.length
     let width = data.length === 0 ? 0 : data[0].length
-    let oldSign = data[y][x]
-
-    if (oldSign !== 0) return null
-    if (!hasVertex(vertex, width, height)) return 'Pass'
-    if (shapes == null) shapes = require('../data/shapes.json')
+    if (sign === 0 || !hasVertex(vertex, width, height)) return 'Pass'
 
     let [x, y] = vertex
+    let oldSign = data[y][x]
+    if (oldSign !== 0) return null
+    if (shapes == null) shapes = require('../data/shapes.json')
+
     let neighbors = getNeighbors(vertex, width, height)
 
     // Check suicide
@@ -57,7 +57,7 @@ module.exports = function(data, sign, vertex, {shapes = null} = {}) {
 
     let equalsVertex = equals(vertex)
     if (equalsVertex([(width - 1) / 2, (height - 1) / 2])) return 'Tengen'
-    if (getUnnamedHoshis().some(equalsVertex)) return 'Hoshi'
+    if (getUnnamedHoshis(width, height).some(equalsVertex)) return 'Hoshi'
 
     let diff = vertex
         .map((z, i) => Math.min(z + 1, [width, height][i] - z))
