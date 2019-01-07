@@ -8,7 +8,7 @@ const {
     getUnnamedHoshis
 } = require('./helper')
 
-exports.matchCorner = function(data, vertices) {
+exports.matchCorner = function*(data, vertices) {
     let height = data.length
     let width = data.length === 0 ? 0 : data[0].length
     let hypotheses = Array(8).fill(true)
@@ -26,33 +26,37 @@ exports.matchCorner = function(data, vertices) {
                 hypothesesInvert[i] = false
         }
 
-        if (!hypotheses.includes(true) && !hypothesesInvert.includes(true))
-            return null
+        if (!hypotheses.includes(true) && !hypothesesInvert.includes(true)) return
     }
 
-    let i = [...hypotheses, ...hypothesesInvert].indexOf(true)
+    for (let invert = 0; invert <= 1; invert++) {
+        for (let i = 0; i < hypotheses.length; i++) {
+            if (!invert && !hypotheses[i] || !!invert && !hypothesesInvert[i]) continue
 
-    return {
-        symmetryIndex: i < 8 ? i : i - 8,
-        invert: i >= 8,
-        vertices: vertices.map(([vertex, _]) =>
-            getBoardSymmetries(vertex, width, height)[i < 8 ? i : i - 8]
-        )
+            yield {
+                symmetryIndex: i,
+                invert: !!invert,
+                vertices: vertices.map(([vertex, _]) =>
+                    getBoardSymmetries(vertex, width, height)[i]
+                )
+            }
+        }
     }
 }
 
-exports.matchShape = function(data, [x, y], shape) {
+exports.matchShape = function*(data, anchor, shape) {
     let height = data.length
     let width = data.length === 0 ? 0 : data[0].length
-    if (!hasVertex([x, y], width, height)) return null
+    if (!hasVertex(anchor, width, height)) return
 
+    let [x, y] = anchor
     let sign = data[y][x]
-    if (sign === 0) return null
-    let equalsVertex = equals([x, y])
+    if (sign === 0) return
+
+    let equalsVertex = equals(anchor)
 
     for (let [[ax, ay], as] of shape.anchors) {
         let hypotheses = Array(8).fill(true)
-        let i = 0
 
         if (shape.size != null && (width !== height || width !== +shape.size))
             continue
@@ -74,20 +78,21 @@ exports.matchShape = function(data, [x, y], shape) {
                     hypotheses[k] = false
             }
 
-            i = hypotheses.indexOf(true)
-            if (i < 0) break
+            if (!hypotheses.includes(true)) break
         }
 
-        if (i >= 0) return {
-            symmetryIndex: i,
-            invert: sign !== as,
-            vertices: shape.vertices.map(([vertex, _]) =>
-                getBoardSymmetries(vertex, width, height)[i]
-            )
+        for (let i = 0; i < hypotheses.length; i++) {
+            if (!hypotheses[i]) continue
+
+            yield {
+                symmetryIndex: i,
+                invert: sign !== as,
+                vertices: vertices.map(([vertex, _]) =>
+                    getBoardSymmetries(vertex, width, height)[i]
+                )
+            }
         }
     }
-
-    return null
 }
 
 exports.nameMove = function(data, sign, [x, y], {shapes = null} = {}) {
@@ -133,7 +138,7 @@ exports.nameMove = function(data, sign, [x, y], {shapes = null} = {}) {
     data[y][x] = sign
 
     for (let shape of shapes) {
-        if (exports.matchShape(data, [x, y], shape)) {
+        for (let _ of exports.matchShape(data, [x, y], shape)) {
             data[y][x] = oldSign
             return shape.name
         }
