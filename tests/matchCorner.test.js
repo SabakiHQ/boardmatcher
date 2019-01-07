@@ -2,7 +2,7 @@ const t = require('tap')
 const boardmatcher = require('..')
 const data = require('./data')
 
-t.test('should match corner', async t => {
+t.test('should match corner', t => {
     let signedVertices = []
     let height = data.finished.length
     let width = data.finished[0].length

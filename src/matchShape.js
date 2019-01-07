@@ -4,6 +4,7 @@ module.exports = function*(data, anchor, shape) {
     let height = data.length
     let width = data.length === 0 ? 0 : data[0].length
     if (!hasVertex(anchor, width, height)) return
+    if (shape.size != null && (width !== height || width !== +shape.size)) return
 
     let [x, y] = anchor
     let sign = data[y][x]
@@ -13,9 +14,6 @@ module.exports = function*(data, anchor, shape) {
 
     for (let [[ax, ay], as] of shape.anchors) {
         let hypotheses = Array(8).fill(true)
-
-        if (shape.size != null && (width !== height || width !== +shape.size))
-            continue
 
         if (shape.type === 'corner' && !getBoardSymmetries([ax, ay], width, height).some(equalsVertex))
             continue
