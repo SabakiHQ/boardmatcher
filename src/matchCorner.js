@@ -3,10 +3,13 @@ const {getBoardSymmetries} = require('./helper')
 module.exports = function*(data, pattern) {
     let height = data.length
     let width = data.length === 0 ? 0 : data[0].length
+    if (pattern.size != null && (width !== height || width !== +pattern.size)) return
+
     let hypotheses = Array(8).fill(true)
     let hypothesesInvert = Array(8).fill(true)
+    let anchors = pattern.anchors || []
 
-    for (let [[x, y], sign] of pattern) {
+    for (let [[x, y], sign] of [...anchors, ...pattern.vertices]) {
         let representatives = getBoardSymmetries([x, y], width, height)
 
         for (let i = 0; i < hypotheses.length; i++) {
@@ -25,12 +28,13 @@ module.exports = function*(data, pattern) {
         for (let i = 0; i < hypotheses.length; i++) {
             if (!invert && !hypotheses[i] || !!invert && !hypothesesInvert[i]) continue
 
+            let transform = vertex => getBoardSymmetries(vertex, width, height)[i]
+
             yield {
                 symmetryIndex: i,
                 invert: !!invert,
-                vertices: pattern.map(([vertex, _]) =>
-                    getBoardSymmetries(vertex, width, height)[i]
-                )
+                anchors: anchors.map(([vertex, _]) => transform(vertex)),
+                vertices: pattern.vertices.map(([vertex, _]) => transform(vertex))
             }
         }
     }
