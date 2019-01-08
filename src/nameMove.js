@@ -40,7 +40,7 @@ module.exports = function(data, sign, vertex, {library = null} = {}) {
     if (friendlies.length === neighbors.length) return 'Fill'
     if (friendlies.length >= 2) return 'Connect'
 
-    // Match shape
+    // Match library pattern
 
     data[y][x] = sign
 

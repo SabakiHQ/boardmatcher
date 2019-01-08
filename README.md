@@ -44,34 +44,36 @@ Board positions are represented by an array of the form `[x, y]` where `x` and `
 
 Signed vertices are arrays of the form `[[x, y], sign]` where `[x, y]` is a [vertex](#vertex), and `sign` is either `-1`, `0`, or `1` for denoting a white stone, an empty vertex, or a black stone respectively.
 
-### Shape
+### Pattern
 
-A shape is an object of the following form:
+A pattern object is an object of the following form:
 
 ~~~js
 {
     name?: <String>,
     size?: <Integer>,
     type?: 'corner' | null,
-    anchors: <SignedVertex[]>,
+    anchors?: <SignedVertex[]>,
     vertices: <SignedVertex[]>
 }
 ~~~
 
 ### Match
 
-A match is an object of the following form:
+A match object is an object of the following form:
 
 ~~~js
 {
     symmetryIndex: <Integer>,
     invert: <Boolean>,
+    anchors: <Vertex[]>,
     vertices: <Vertex[]>
 }
 ~~~
 
 - `symmetryIndex` is an integer between `0` and `7` denoting how the pattern vertices has to be transformed so they match the relative positions of the match.
 - `invert` indicates whether the pattern colors have to be inverted so that they match the matched colors or not.
+- `anchors` holds the anchors of the match that corresponds to the pattern anchors.
 - `vertices` holds the vertices of the match that corresponds to the pattern vertices.
 
 ---
@@ -89,14 +91,14 @@ Returns `null` if `boardmatcher` cannot name the given move, otherwise a string 
 ### `*boardmatcher.matchCorner(data, pattern)`
 
 - `data` [`<BoardData>`](#board-data)
-- `pattern` [`<SignedVertex[]>`](#signed-vertex)
+- `pattern` [`<Pattern>`](#pattern)
 
-A generator function that yields all [matches](#match) of the given corner `pattern` on `data`.
+A generator function that yields all [matches](#match) of the given `pattern` on `data`. `pattern` will be regarded as corner type regardless of its type.
 
 ### `*boardmatcher.matchShape(data, anchor, shape)`
 
 - `data` [`<BoardData>`](#board-data)
 - `anchor` [`<Vertex>`](#vertex)
-- `shape` [`<Shape>`](#shape)
+- `pattern` [`<Pattern>`](#pattern)
 
-A generator function that yields all [matches](#match) of `shape`, for which the given `anchor` vertex corresponds to one of its anchors, on `data`.
+A generator function that yields all [matches](#match) of the given `pattern`, for which the given `anchor` vertex corresponds to one of its anchors, on `data`.

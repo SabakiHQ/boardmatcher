@@ -12,7 +12,7 @@ module.exports = function*(data, anchor, pattern) {
 
     let equalsVertex = equals(anchor)
 
-    for (let [[ax, ay], as] of pattern.anchors) {
+    for (let [[ax, ay], as] of pattern.anchors || []) {
         if (pattern.type === 'corner' && !getBoardSymmetries([ax, ay], width, height).some(equalsVertex))
             continue
 
