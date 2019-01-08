@@ -44,6 +44,36 @@ Board positions are represented by an array of the form `[x, y]` where `x` and `
 
 Signed vertices are arrays of the form `[[x, y], sign]` where `[x, y]` is a [vertex](#vertex), and `sign` is either `-1`, `0`, or `1` for denoting a white stone, an empty vertex, or a black stone respectively.
 
+### Shape
+
+A shape is an object of the following form:
+
+~~~js
+{
+    name?: <String>,
+    size?: <Integer>,
+    type?: 'corner' | null,
+    anchors: <SignedVertex[]>,
+    vertices: <SignedVertex[]>
+}
+~~~
+
+### Match
+
+A match is an object of the following form:
+
+~~~js
+{
+    symmetryIndex: <Integer>,
+    invert: <Boolean>,
+    vertices: <Vertex[]>
+}
+~~~
+
+- `symmetryIndex` is an integer between `0` and `7` denoting how the pattern vertices has to be transformed so they match the relative positions of the match.
+- `invert` indicates whether the pattern colors have to be inverted so that they match the matched colors or not.
+- `vertices` holds the vertices of the match that corresponds to the pattern vertices.
+
 ---
 
 ### `boardmatcher.nameMove(data, sign, vertex[, options])`
@@ -56,12 +86,12 @@ Signed vertices are arrays of the form `[[x, y], sign]` where `[x, y]` is a [ver
 
 Returns `null` if `boardmatcher` cannot name the given move, otherwise a string with the move name.
 
-### `*boardmatcher.matchCorner(data, vertices)`
+### `*boardmatcher.matchCorner(data, pattern)`
 
 - `data` [`<BoardData>`](#board-data)
-- `vertices` [`<SignedVertex[]>`](#signed-vertex)
+- `pattern` [`<SignedVertex[]>`](#signed-vertex)
 
-TODO
+A generator function that yields all [matches](#match) of the given corner `pattern` on `data`.
 
 ### `*boardmatcher.matchShape(data, anchor, shape)`
 
@@ -69,10 +99,4 @@ TODO
 - `anchor` [`<Vertex>`](#vertex)
 - `shape` [`<Shape>`](#shape)
 
-TODO
-
----
-
-### Shape
-
-TODO
+A generator function that yields all [matches](#match) of `shape`, for which the given `anchor` vertex corresponds to one of its anchors, on `data`.
