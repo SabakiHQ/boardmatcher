@@ -13,12 +13,12 @@ module.exports = function*(data, anchor, shape) {
     let equalsVertex = equals(anchor)
 
     for (let [[ax, ay], as] of shape.anchors) {
-        let hypotheses = Array(8).fill(true)
-
         if (shape.type === 'corner' && !getBoardSymmetries([ax, ay], width, height).some(equalsVertex))
             continue
 
         // Hypothesize [x, y] === [ax, ay]
+
+        let hypotheses = Array(8).fill(true)
 
         for (let [[vx, vy], vs] of shape.vertices) {
             let diff = [vx - ax, vy - ay]
@@ -28,8 +28,9 @@ module.exports = function*(data, anchor, shape) {
                 if (!hypotheses[k]) continue
                 let [wx, wy] = [x + symm[k][0], y + symm[k][1]]
 
-                if (!hasVertex([wx, wy], width, height) || data[wy][wx] !== vs * sign * as)
+                if (!hasVertex([wx, wy], width, height) || data[wy][wx] !== vs * sign * as) {
                     hypotheses[k] = false
+                }
             }
 
             if (!hypotheses.includes(true)) break
@@ -41,8 +42,8 @@ module.exports = function*(data, anchor, shape) {
             yield {
                 symmetryIndex: i,
                 invert: sign !== as,
-                vertices: shape.vertices.map(([vertex, _]) =>
-                    getBoardSymmetries(vertex, width, height)[i]
+                vertices: shape.vertices.map(([[vx, vy], _]) =>
+                    getSymmetries([vx - ax, vy - ay])[i].map((d, j) => anchor[j] + d)
                 )
             }
         }
