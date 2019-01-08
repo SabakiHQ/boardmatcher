@@ -1,7 +1,7 @@
-const matchShape = require('./matchShape')
+const matchShape = require('./matchPattern')
 const {equals, hasVertex, getNeighbors, getLiberties, getUnnamedHoshis} = require('./helper')
 
-module.exports = function(data, sign, vertex, {shapes = null} = {}) {
+module.exports = function(data, sign, vertex, {library = null} = {}) {
     let height = data.length
     let width = data.length === 0 ? 0 : data[0].length
     if (sign === 0 || !hasVertex(vertex, width, height)) return 'Pass'
@@ -9,7 +9,7 @@ module.exports = function(data, sign, vertex, {shapes = null} = {}) {
     let [x, y] = vertex
     let oldSign = data[y][x]
     if (oldSign !== 0) return null
-    if (shapes == null) shapes = require('../data/shapes.json')
+    if (library == null) library = require('../data/shapes.json')
 
     let neighbors = getNeighbors(vertex, width, height)
 
@@ -44,10 +44,10 @@ module.exports = function(data, sign, vertex, {shapes = null} = {}) {
 
     data[y][x] = sign
 
-    for (let shape of shapes) {
-        for (let _ of matchShape(data, vertex, shape)) {
+    for (let pattern of library) {
+        for (let _ of matchShape(data, vertex, pattern)) {
             data[y][x] = oldSign
-            return shape.name
+            return pattern.name
         }
     }
 
