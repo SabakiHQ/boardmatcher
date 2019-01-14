@@ -4,7 +4,7 @@ exports.hasVertex = ([x, y], width, height) => x >= 0 && y >= 0 && x < width && 
 exports.getNeighbors = ([x, y], width, height) =>
     [[x - 1, y], [x + 1, y], [x, y - 1], [x, y + 1]].filter(v => exports.hasVertex(v, width, height))
 
-exports.getLiberties = function([x, y], data, visited = [], result = []) {
+exports.getPseudoLibertyCount = function([x, y], data, visited = [], result = []) {
     let height = data.length
     let width = data.length === 0 ? 0 : data[0].length
     let neighbors = exports.getNeighbors([x, y], width, height)
@@ -13,16 +13,17 @@ exports.getLiberties = function([x, y], data, visited = [], result = []) {
     visited.push([x, y])
 
     for (let [nx, ny] of neighbors) {
+        if (result.length >= 3) break
         if (data[ny][nx] === -sign || visited.some(exports.equals([nx, ny]))) continue
         if (data[ny][nx] === 0 && !result.some(exports.equals([nx, ny]))) {
             result.push([nx, ny])
             continue
         }
 
-        exports.getLiberties([nx, ny], data, visited, result)
+        exports.getPseudoLibertyCount([nx, ny], data, visited, result)
     }
 
-    return result
+    return result.length
 }
 
 exports.getSymmetries = function([x, y]) {

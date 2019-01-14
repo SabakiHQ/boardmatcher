@@ -1,5 +1,5 @@
 const matchShape = require('./matchPattern')
-const {equals, hasVertex, getNeighbors, getLiberties, getUnnamedHoshis} = require('./helper')
+const {equals, hasVertex, getNeighbors, getPseudoLibertyCount, getUnnamedHoshis} = require('./helper')
 
 module.exports = function(data, sign, vertex, {library = null} = {}) {
     let height = data.length
@@ -18,7 +18,7 @@ module.exports = function(data, sign, vertex, {library = null} = {}) {
 
     let nextData = data.map((row, j) => y !== j ? row : row.map((s, i) => x !== i ? s : sign))
 
-    if (getLiberties(vertex, newData).length === 0) {
+    if (getPseudoLibertyCount(vertex, nextData) === 0) {
         return 'Suicide'
     }
 
@@ -27,7 +27,7 @@ module.exports = function(data, sign, vertex, {library = null} = {}) {
     for (let [nx, ny] of neighbors) {
         if (data[ny][nx] !== -sign) continue
 
-        let libertyCount = getLiberties([nx, ny], data).length
+        let libertyCount = getPseudoLibertyCount([nx, ny], data)
         if (libertyCount === 1) return 'Take'
         if (libertyCount === 2) return 'Atari'
     }
@@ -41,7 +41,7 @@ module.exports = function(data, sign, vertex, {library = null} = {}) {
     // Match library pattern
 
     for (let pattern of library) {
-        for (let _ of matchShape(newData, vertex, pattern)) {
+        for (let _ of matchShape(nextData, vertex, pattern)) {
             return pattern.name
         }
     }
