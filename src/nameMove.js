@@ -11,18 +11,16 @@ module.exports = function(data, sign, vertex, {library = null} = {}) {
     if (oldSign !== 0) return null
     if (library == null) library = require('../data/shapes.json')
 
+    let equalsVertex = equals(vertex)
     let neighbors = getNeighbors(vertex, width, height)
 
     // Check suicide
 
-    data[y][x] = sign
+    let nextData = data.map((row, j) => y !== j ? row : row.map((s, i) => x !== i ? s : sign))
 
-    if (getLiberties(vertex, data).length === 0) {
-        data[y][x] = oldSign
+    if (getLiberties(vertex, newData).length === 0) {
         return 'Suicide'
     }
-
-    data[y][x] = oldSign
 
     // Check atari & capture
 
@@ -42,20 +40,14 @@ module.exports = function(data, sign, vertex, {library = null} = {}) {
 
     // Match library pattern
 
-    data[y][x] = sign
-
     for (let pattern of library) {
-        for (let _ of matchShape(data, vertex, pattern)) {
-            data[y][x] = oldSign
+        for (let _ of matchShape(newData, vertex, pattern)) {
             return pattern.name
         }
     }
 
-    data[y][x] = oldSign
-
     // Determine position to edges
 
-    let equalsVertex = equals(vertex)
     if (equalsVertex([(width - 1) / 2, (height - 1) / 2])) return 'Tengen'
     if (getUnnamedHoshis(width, height).some(equalsVertex)) return 'Hoshi'
 
