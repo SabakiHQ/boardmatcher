@@ -2,8 +2,8 @@ const fs = require('fs')
 const {join} = require('path')
 const sgf = require('@sabaki/sgf')
 
-let root = sgf.parseFile(join(__dirname, 'data', 'shapes.sgf'))[0]
-let shapes = []
+let root = sgf.parseFile(join(__dirname, 'data', 'library.sgf'))[0]
+let library = []
 
 for (let node of root.children) {
     let anchors = node.data.MA.map(x => [sgf.parseVertex(x), node.data.AB.includes(x) ? 1 : -1])
@@ -19,11 +19,11 @@ for (let node of root.children) {
         }
     }
 
-    shapes.push(Object.assign({
+    library.push(Object.assign({
         name: node.data.N[0],
         anchors,
         vertices
     }, data))
 }
 
-fs.writeFileSync(join(__dirname, 'data', 'shapes.json'), JSON.stringify(shapes))
+fs.writeFileSync(join(__dirname, 'data', 'library.json'), JSON.stringify(library))

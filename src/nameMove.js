@@ -9,7 +9,7 @@ module.exports = function(data, sign, vertex, {library = null} = {}) {
     let [x, y] = vertex
     let oldSign = data[y][x]
     if (oldSign !== 0) return null
-    if (library == null) library = require('../data/shapes.json')
+    if (library == null) library = require('../data/library.json')
 
     let equalsVertex = equals(vertex)
     let neighbors = getNeighbors(vertex, width, height)
