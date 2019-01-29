@@ -4,8 +4,8 @@
   "description": "Finds patterns & shapes in Go board arrangements and names moves.",
   "main": "./src/main.js",
   "scripts": {
-    "test": "tap tests/*.test.js",
-    "build": "node build",
+    "test": "tap ./tests/*.test.js",
+    "build": "node ./build.js",
     "prepublishOnly": "npm run build"
   },
   "repository": {
