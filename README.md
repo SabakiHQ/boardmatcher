@@ -51,12 +51,15 @@ A pattern object is an object of the following form:
 ~~~js
 {
     name?: <String>,
-    size?: <Integer>,
+    size?: <Integer> | null,
     type?: 'corner' | null,
     anchors?: <SignedVertex[]>,
     vertices: <SignedVertex[]>
 }
 ~~~
+
+- If `size` is set, this pattern only matches on square boards with the given size.
+- If `type` is set to `'corner'`, this pattern takes the relative position to the corner into account. Otherwise, the pattern will be invariant to translations.
 
 ### Match
 
@@ -84,7 +87,7 @@ A match object is an object of the following form:
 - `sign` - `-1`, or `1`, denoting the white player or the black player respectively
 - `vertex` - The move the player given by `sign` is about to make
 - `options` *(optional)*
-    - `shapes` [`<Shape[]>`](#shape) *(optional)* - The shape library to use. Defaults to a pre-curated shape library.
+    - `library` [`<Pattern[]>`](#pattern) *(optional)* - The pattern library to use. Defaults to a pre-curated pattern library.
 
 Returns `null` if `boardmatcher` cannot name the given move, otherwise a string with the move name.
 
