@@ -14,8 +14,8 @@ for (let node of root.children) {
     let data = {}
 
     if (node.data.C != null) {
-        for (let [key, value] of node.data.C[0].trim().split('\n').map(x => x.trim().slice(2).split(': '))) {
-            data[key] = value
+        for (let [key, value] of node.data.C[0].trim().split('\n').map(x => x.trim().slice(2).split(':'))) {
+            data[key.trim()] = value.trim()
         }
     }
 
