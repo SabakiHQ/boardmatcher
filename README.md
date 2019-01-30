@@ -50,14 +50,16 @@ A pattern object is an object of the following form:
 
 ~~~js
 {
-    name?: <String>,
+    name?: <String> | null,
+    url?: <String> | null,
     size?: <Integer> | null,
     type?: 'corner' | null,
-    anchors?: <SignedVertex[]>,
+    anchors?: <SignedVertex[]> | null,
     vertices: <SignedVertex[]>
 }
 ~~~
 
+- `name` and `url` are irrelevant for the [`matchCorner`](#boardmatchermatchcornerdata-pattern) and [`matchShape`](#boardmatchermatchshapedata-anchor-pattern).
 - If `size` is set, this pattern only matches on square boards with the given size.
 - If `type` is set to `'corner'`, this pattern takes the relative position to the corner into account. Otherwise, the pattern will be invariant to translations.
 
@@ -98,7 +100,7 @@ Returns `null` if `boardmatcher` cannot name the given move, otherwise a string 
 
 A generator function that yields all [matches](#match) of the given `pattern` on `data`. `pattern` will be regarded as corner type regardless of its type.
 
-### `*boardmatcher.matchShape(data, anchor, shape)`
+### `*boardmatcher.matchShape(data, anchor, pattern)`
 
 - `data` [`<BoardData>`](#board-data)
 - `anchor` [`<Vertex>`](#vertex)
