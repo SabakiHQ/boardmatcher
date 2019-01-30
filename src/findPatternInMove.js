@@ -31,14 +31,6 @@ module.exports = function(data, sign, vertex, {library = null} = {}) {
     let equalsVertex = equals(vertex)
     let neighbors = getNeighbors(vertex, width, height)
 
-    // Check suicide
-
-    let nextData = data.map((row, j) => y !== j ? row : row.map((s, i) => x !== i ? s : sign))
-
-    if (getPseudoLibertyCount(vertex, nextData) === 0) {
-        return getDummyPatternMatch('Suicide', 'https://senseis.xmp.net/?Suicide')
-    }
-
     // Check atari & capture
 
     for (let [nx, ny] of neighbors) {
@@ -47,6 +39,14 @@ module.exports = function(data, sign, vertex, {library = null} = {}) {
         let libertyCount = getPseudoLibertyCount([nx, ny], data)
         if (libertyCount === 1) return getDummyPatternMatch('Take')
         if (libertyCount === 2) return getDummyPatternMatch('Atari', 'https://senseis.xmp.net/?Atari')
+    }
+
+    // Check suicide
+
+    let nextData = data.map((row, j) => y !== j ? row : row.map((s, i) => x !== i ? s : sign))
+
+    if (getPseudoLibertyCount(vertex, nextData) === 0) {
+        return getDummyPatternMatch('Suicide', 'https://senseis.xmp.net/?Suicide')
     }
 
     // Check connection

@@ -27,6 +27,17 @@ t.test('should name takes', t => {
     t.end()
 })
 
+t.test('should be able to distinguish between suicides and takes', t => {
+    let custom = JSON.parse(JSON.stringify(data.unfinished))
+
+    custom[6][12] = 1
+    custom[8][12] = 1
+    custom[7][13] = 1
+
+    t.equal(boardmatcher.nameMove(custom, -1, [12, 7]), 'Take')
+    t.end()
+})
+
 t.test('should name ataris', t => {
     t.equal(boardmatcher.nameMove(data.unfinished, -1, [17, 15]), 'Atari')
     t.equal(boardmatcher.nameMove(data.unfinished, 1, [18, 15]), 'Atari')
