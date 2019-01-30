@@ -2,23 +2,26 @@ const matchShape = require('./matchPattern')
 const {equals, hasVertex, getNeighbors, getPseudoLibertyCount, getUnnamedHoshis} = require('./helper')
 
 module.exports = function(data, sign, vertex, {library = null} = {}) {
-    let getDummyReturnFromString = str => ({
+    let isPass = sign === 0 || vertex == null || !hasVertex(vertex, width, height)
+
+    let getDummyPatternMatch = (name, url = null) => ({
         pattern: {
-            name: str,
-            anchors: [[vertex, sign]],
+            name,
+            url,
+            anchors: isPass ? [] : [[vertex, sign]],
             vertices: []
         },
         match: {
             symmetryIndex: 0,
             invert: false,
-            anchors: [[vertex, sign]],
+            anchors: isPass ? [] : [vertex],
             vertices: []
         }
     })
 
     let height = data.length
     let width = data.length === 0 ? 0 : data[0].length
-    if (sign === 0 || !hasVertex(vertex, width, height)) return getDummyReturnFromString('Pass')
+    if (isPass) return getDummyPatternMatch('Pass', 'https://senseis.xmp.net/?Pass')
 
     let [x, y] = vertex
     let oldSign = data[y][x]
@@ -33,7 +36,7 @@ module.exports = function(data, sign, vertex, {library = null} = {}) {
     let nextData = data.map((row, j) => y !== j ? row : row.map((s, i) => x !== i ? s : sign))
 
     if (getPseudoLibertyCount(vertex, nextData) === 0) {
-        return getDummyReturnFromString('Suicide')
+        return getDummyPatternMatch('Suicide', 'https://senseis.xmp.net/?Suicide')
     }
 
     // Check atari & capture
@@ -42,15 +45,15 @@ module.exports = function(data, sign, vertex, {library = null} = {}) {
         if (data[ny][nx] !== -sign) continue
 
         let libertyCount = getPseudoLibertyCount([nx, ny], data)
-        if (libertyCount === 1) return getDummyReturnFromString('Take')
-        if (libertyCount === 2) return getDummyReturnFromString('Atari')
+        if (libertyCount === 1) return getDummyPatternMatch('Take')
+        if (libertyCount === 2) return getDummyPatternMatch('Atari', 'https://senseis.xmp.net/?Atari')
     }
 
     // Check connection
 
     let friendlies = neighbors.filter(([nx, ny]) => data[ny][nx] === sign)
-    if (friendlies.length === neighbors.length) return getDummyReturnFromString('Fill')
-    if (friendlies.length >= 2) return getDummyReturnFromString('Connect')
+    if (friendlies.length === neighbors.length) return getDummyPatternMatch('Fill')
+    if (friendlies.length >= 2) return getDummyPatternMatch('Connect')
 
     // Match library pattern
 
@@ -62,14 +65,16 @@ module.exports = function(data, sign, vertex, {library = null} = {}) {
 
     // Determine position to edges
 
-    if (equalsVertex([(width - 1) / 2, (height - 1) / 2])) return getDummyReturnFromString('Tengen')
-    if (getUnnamedHoshis(width, height).some(equalsVertex)) return getDummyReturnFromString('Hoshi')
+    if (equalsVertex([(width - 1) / 2, (height - 1) / 2]))
+        return getDummyPatternMatch('Tengen', 'https://senseis.xmp.net/?Tengen')
+    if (getUnnamedHoshis(width, height).some(equalsVertex))
+        return getDummyPatternMatch('Hoshi', 'https://senseis.xmp.net/?StarPoint')
 
     let diff = vertex
         .map((z, i) => Math.min(z + 1, [width, height][i] - z))
         .sort((a, b) => a - b)
 
-    if (diff[1] <= 6) return getDummyReturnFromString(diff.join('-') + ' point')
+    if (diff[1] <= 6) return getDummyPatternMatch(diff.join('-') + ' point')
 
     return null
 }
