@@ -2,6 +2,8 @@ const matchShape = require('./matchPattern')
 const {equals, hasVertex, getNeighbors, getPseudoLibertyCount, getUnnamedHoshis} = require('./helper')
 
 module.exports = function(data, sign, vertex, {library = null} = {}) {
+    let height = data.length
+    let width = data.length === 0 ? 0 : data[0].length
     let isPass = sign === 0 || vertex == null || !hasVertex(vertex, width, height)
 
     let getDummyPatternMatch = (name, url = null) => ({
@@ -19,8 +21,6 @@ module.exports = function(data, sign, vertex, {library = null} = {}) {
         }
     })
 
-    let height = data.length
-    let width = data.length === 0 ? 0 : data[0].length
     if (isPass) return getDummyPatternMatch('Pass', 'https://senseis.xmp.net/?Pass')
 
     let [x, y] = vertex
