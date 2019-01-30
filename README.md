@@ -93,6 +93,19 @@ A match object is an object of the following form:
 
 Returns `null` if `boardmatcher` cannot name the given move, otherwise a string with the move name.
 
+### `boardmatcher.findPatternInMove(data, sign, vertex[, options])`
+
+- See [`boardmatcher.nameMove()`](#boardmatchernamemovedata-sign-vertex-options).
+
+Returns `null` if `boardmatcher` cannot find a pattern for the given move, otherwise an object of the following form:
+
+~~~js
+{
+    pattern: <Pattern>,
+    match: <Match>
+}
+~~~
+
 ### `*boardmatcher.matchCorner(data, pattern)`
 
 - `data` [`<BoardData>`](#board-data)
