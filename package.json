@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/SabakiHQ/boardmatcher",
   "devDependencies": {
-    "@sabaki/sgf": "^3.0.0",
-    "tap": "^12.1.0"
+    "@sabaki/sgf": "^3.2.1",
+    "tap": "^12.6.1"
   }
 }

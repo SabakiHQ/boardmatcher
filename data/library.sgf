@@ -133,6 +133,8 @@
   )(
     ;AB[dd][ff]N[Diagonal Jump]MA[dd][ff]CR[ed][de][ee][fe][ef]C[- url: https://senseis.xmp.net/?DiagonalJump]
   )(
-    ;PL[B]AB[dd]N[4-4 Point]C[- url: https://senseis.xmp.net/?44Point]
+    ;PL[B]N[4-4 Point]C[- url: https://senseis.xmp.net/?44Point
+- type: corner
+]AE[dd]AB[pd]CR[pa][pb][pc][qa][qb][qc][qd][ra][rb][rc][rd][sa][sb][sc][sd]MA[pd]
   )
 )
