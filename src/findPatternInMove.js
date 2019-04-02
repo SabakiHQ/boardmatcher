@@ -63,18 +63,12 @@ module.exports = function(data, sign, vertex, {library = null} = {}) {
         }
     }
 
-    // Determine position to edges
+    // Match hoshis
 
     if (equalsVertex([(width - 1) / 2, (height - 1) / 2]))
         return getDummyPatternMatch('Tengen', 'https://senseis.xmp.net/?Tengen')
     if (getUnnamedHoshis(width, height).some(equalsVertex))
         return getDummyPatternMatch('Hoshi', 'https://senseis.xmp.net/?StarPoint')
-
-    let diff = vertex
-        .map((z, i) => Math.min(z + 1, [width, height][i] - z))
-        .sort((a, b) => a - b)
-
-    if (diff[1] <= 6) return getDummyPatternMatch(diff.join('-') + ' point')
 
     return null
 }

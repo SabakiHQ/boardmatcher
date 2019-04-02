@@ -1,5 +1,5 @@
 (
-  ;GM[1]AP[Sabaki:0.42.0]CA[UTF-8]SZ[19]
+  ;GM[1]AP[Sabaki:0.43.1]CA[UTF-8]SZ[19]
   (
     ;AB[dd][kc][qd]N[Low Chinese Opening]C[- url: https://senseis.xmp.net/?ChineseFuseki
 - size: 19
@@ -132,5 +132,7 @@
     ;AB[dd]AW[ee]N[Shoulder Hit]CR[cc][dc][ec][cd][ed][ce][de]MA[dd]C[- url: https://senseis.xmp.net/?ShoulderHit]
   )(
     ;AB[dd][ff]N[Diagonal Jump]MA[dd][ff]CR[ed][de][ee][fe][ef]C[- url: https://senseis.xmp.net/?DiagonalJump]
+  )(
+    ;PL[B]AB[dd]N[4-4 Point]C[- url: https://senseis.xmp.net/?44Point]
   )
 )
