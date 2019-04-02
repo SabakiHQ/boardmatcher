@@ -73,17 +73,9 @@ t.test('should name hoshis correctly', t => {
     t.equal(boardmatcher.nameMove(data.empty, -1, [9, 9]), 'Tengen')
     t.equal(boardmatcher.nameMove(data.empty, -1, [9, 3]), 'Hoshi')
     t.equal(boardmatcher.nameMove(data.empty, 1, [9, 15]), 'Hoshi')
-    t.equal(boardmatcher.nameMove(data.empty, 1, [3, 3]), '4-4 point')
-    t.equal(boardmatcher.nameMove(data.empty, 1, [15, 15]), '4-4 point')
+    t.equal(boardmatcher.nameMove(data.empty, 1, [3, 3]), '4-4 Point')
+    t.equal(boardmatcher.nameMove(data.empty, 1, [15, 15]), '4-4 Point')
 
     t.end()
 })
 
-t.test('should name off-hoshis correctly', t => {
-    t.equal(boardmatcher.nameMove(data.empty, -1, [3, 2]), '3-4 point')
-    t.equal(boardmatcher.nameMove(data.empty, -1, [2, 15]), '3-4 point')
-    t.equal(boardmatcher.nameMove(data.empty, 1, [5, 4]), '5-6 point')
-    t.equal(boardmatcher.nameMove(data.empty, 1, [4, 5]), '5-6 point')
-
-    t.end()
-})
