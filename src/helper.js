@@ -42,7 +42,7 @@ exports.getBoardSymmetries = function(vertex, width, height) {
 }
 
 exports.getUnnamedHoshis = function(width, height) {
-    if (Math.min(width, height) < 6) return []
+    if (Math.min(width, height) <= 7) return []
 
     let [nearX, nearY] = [width, height].map(x => x >= 13 ? 3 : 2)
     let [farX, farY] = [width - nearX - 1, height - nearY - 1]
