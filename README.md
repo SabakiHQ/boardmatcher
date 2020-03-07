@@ -16,6 +16,12 @@ To use this module, require it as follows:
 const boardmatcher = require('@sabaki/boardmatcher')
 ```
 
+To access library pattern data, require:
+
+```js
+const library = require('@sabaki/boardmatcher/library')
+```
+
 ## API
 
 ### Board Data

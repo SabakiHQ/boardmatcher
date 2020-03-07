@@ -2,7 +2,7 @@ const fs = require('fs')
 const {join} = require('path')
 const sgf = require('@sabaki/sgf')
 
-let root = sgf.parseFile(join(__dirname, 'data', 'library.sgf'))[0]
+let root = sgf.parseFile(join(__dirname, 'library', 'library.sgf'))[0]
 let library = []
 
 for (let node of root.children) {
@@ -43,6 +43,6 @@ for (let node of root.children) {
 }
 
 fs.writeFileSync(
-  join(__dirname, 'data', 'library.json'),
+  join(__dirname, 'library', 'library.json'),
   JSON.stringify(library)
 )
