@@ -1,6 +1,6 @@
 {
   "name": "@sabaki/boardmatcher",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Finds patterns & shapes in Go board arrangements and names moves.",
   "main": "./src/main.js",
   "scripts": {
