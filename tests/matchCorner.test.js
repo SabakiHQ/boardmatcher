@@ -21,36 +21,36 @@ t.test('should match corner', t => {
     symmetryIndex: 0,
     invert: false,
     anchors: [],
-    vertices: vertices.map(([v, _]) => v)
+    vertices: vertices.map(([v, _]) => v),
   })
 
   matches = [
     ...boardmatcher.matchCorner(data.finished, {
-      vertices: vertices.map(([v, s]) => [v, -s])
-    })
+      vertices: vertices.map(([v, s]) => [v, -s]),
+    }),
   ]
 
   t.deepEqual(matches[0], {
     symmetryIndex: 0,
     invert: true,
     anchors: [],
-    vertices: vertices.map(([v, _]) => v)
+    vertices: vertices.map(([v, _]) => v),
   })
 
   matches = [
     ...boardmatcher.matchCorner(data.finished, {
       vertices: vertices.map(([[x, y], s]) => [
         [width - x - 1, height - y - 1],
-        s
-      ])
-    })
+        s,
+      ]),
+    }),
   ]
 
   t.deepEqual(matches[0], {
     symmetryIndex: 3,
     invert: false,
     anchors: [],
-    vertices: vertices.map(([v, _]) => v)
+    vertices: vertices.map(([v, _]) => v),
   })
 
   t.end()

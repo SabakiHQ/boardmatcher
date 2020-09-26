@@ -1,6 +1,6 @@
 const {getBoardSymmetries} = require('./helper')
 
-module.exports = function*(data, pattern) {
+module.exports = function* (data, pattern) {
   let height = data.length
   let width = data.length === 0 ? 0 : data[0].length
   if (pattern.size != null && (width !== height || width !== +pattern.size))
@@ -36,7 +36,7 @@ module.exports = function*(data, pattern) {
         symmetryIndex: i,
         invert: !!invert,
         anchors: anchors.map(([vertex, _]) => transform(vertex)),
-        vertices: pattern.vertices.map(([vertex, _]) => transform(vertex))
+        vertices: pattern.vertices.map(([vertex, _]) => transform(vertex)),
       }
     }
   }

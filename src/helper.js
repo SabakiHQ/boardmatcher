@@ -7,10 +7,10 @@ exports.getNeighbors = ([x, y], width, height) =>
     [x - 1, y],
     [x + 1, y],
     [x, y - 1],
-    [x, y + 1]
+    [x, y + 1],
   ].filter(v => exports.hasVertex(v, width, height))
 
-exports.getPseudoLibertyCount = function(
+exports.getPseudoLibertyCount = function (
   [x, y],
   data,
   visited = [],
@@ -38,7 +38,7 @@ exports.getPseudoLibertyCount = function(
   return result.length
 }
 
-exports.getSymmetries = function([x, y]) {
+exports.getSymmetries = function ([x, y]) {
   return [
     [x, y],
     [-x, y],
@@ -47,11 +47,11 @@ exports.getSymmetries = function([x, y]) {
     [y, x],
     [-y, x],
     [y, -x],
-    [-y, -x]
+    [-y, -x],
   ]
 }
 
-exports.getBoardSymmetries = function(vertex, width, height) {
+exports.getBoardSymmetries = function (vertex, width, height) {
   let [mx, my] = [width - 1, height - 1]
 
   return exports
@@ -60,7 +60,7 @@ exports.getBoardSymmetries = function(vertex, width, height) {
     .filter(v => exports.hasVertex(v, width, height))
 }
 
-exports.getUnnamedHoshis = function(width, height) {
+exports.getUnnamedHoshis = function (width, height) {
   if (Math.min(width, height) <= 7) return []
 
   let [nearX, nearY] = [width, height].map(x => (x >= 13 ? 3 : 2))

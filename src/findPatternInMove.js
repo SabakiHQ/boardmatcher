@@ -4,10 +4,10 @@ const {
   hasVertex,
   getNeighbors,
   getPseudoLibertyCount,
-  getUnnamedHoshis
+  getUnnamedHoshis,
 } = require('./helper')
 
-module.exports = function(data, sign, vertex, {library = null} = {}) {
+module.exports = function (data, sign, vertex, {library = null} = {}) {
   let height = data.length
   let width = data.length === 0 ? 0 : data[0].length
   let isPass = sign === 0 || vertex == null || !hasVertex(vertex, width, height)
@@ -17,14 +17,14 @@ module.exports = function(data, sign, vertex, {library = null} = {}) {
       name,
       url,
       anchors: isPass ? [] : [[vertex, sign]],
-      vertices: []
+      vertices: [],
     },
     match: {
       symmetryIndex: 0,
       invert: false,
       anchors: isPass ? [] : [vertex],
-      vertices: []
-    }
+      vertices: [],
+    },
   })
 
   if (isPass)

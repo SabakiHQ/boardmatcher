@@ -2,10 +2,10 @@ const {
   equals,
   hasVertex,
   getSymmetries,
-  getBoardSymmetries
+  getBoardSymmetries,
 } = require('./helper')
 
-module.exports = function*(data, anchor, pattern) {
+module.exports = function* (data, anchor, pattern) {
   let height = data.length
   let width = data.length === 0 ? 0 : data[0].length
   if (!hasVertex(anchor, width, height)) return
@@ -58,7 +58,7 @@ module.exports = function*(data, anchor, pattern) {
         symmetryIndex: i,
         invert: sign !== as,
         anchors: pattern.anchors.map(([vertex, _]) => transform(vertex)),
-        vertices: pattern.vertices.map(([vertex, _]) => transform(vertex))
+        vertices: pattern.vertices.map(([vertex, _]) => transform(vertex)),
       }
     }
   }

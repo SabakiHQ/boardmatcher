@@ -35,12 +35,13 @@
     "semi": false,
     "singleQuote": true,
     "bracketSpacing": false,
-    "proseWrap": "always"
+    "proseWrap": "always",
+    "arrowParens": "avoid"
   },
   "devDependencies": {
     "@sabaki/sgf": "^3.4.4",
     "onchange": "^6.1.0",
-    "prettier": "^1.19.1",
+    "prettier": "^2.1.2",
     "tap": "^14.10.6"
   }
 }
