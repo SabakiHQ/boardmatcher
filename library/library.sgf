@@ -1,161 +1,91 @@
-(
-  ;GM[1]AP[Sabaki:0.43.1]CA[UTF-8]SZ[19]
-  (
-    ;AB[dd][kc][qd]N[Low Chinese Opening]C[- url: https://senseis.xmp.net/?ChineseFuseki
+(;GM[1]AP[Sabaki:0.51.1]CA[UTF-8]SZ[19](;AB[dd][kc][qd]N[Low Chinese Opening]C[- url: https://senseis.xmp.net/?ChineseFuseki
 - size: 19
-- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][dc][ec][fc][gc][hc][ic][jc][lc][mc][nc][oc][pc][qc][rc][sc][ad][bd][cd][ed][fd][gd][hd][id][jd][kd][ld][md][nd][od][pd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][qe][re][se]MA[kc][dd][qd]
-  )(
-    ;AB[dd][kd][qd]N[High Chinese Opening]AE[so]C[- url: https://senseis.xmp.net/?ChineseFuseki
+- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][dc][ec][fc][gc][hc][ic][jc][lc][mc][nc][oc][pc][qc][rc][sc][ad][bd][cd][ed][fd][gd][hd][id][jd][kd][ld][md][nd][od][pd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][qe][re][se]MA[kc][dd][qd])(;AB[dd][kd][qd]N[High Chinese Opening]AE[so]C[- url: https://senseis.xmp.net/?ChineseFuseki
 - size: 19
-- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][dc][ec][fc][gc][hc][ic][jc][kc][lc][mc][nc][oc][pc][qc][rc][sc][ad][bd][cd][ed][fd][gd][hd][id][jd][ld][md][nd][od][pd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][qe][re][se]MA[dd][kd][qd]
-  )(
-    ;AB[dd][pc][qe]N[Orthodox Opening]C[- url: https://senseis.xmp.net/?OrthodoxFuseki
+- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][dc][ec][fc][gc][hc][ic][jc][kc][lc][mc][nc][oc][pc][qc][rc][sc][ad][bd][cd][ed][fd][gd][hd][id][jd][ld][md][nd][od][pd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][qe][re][se]MA[dd][kd][qd])(;AB[dd][pc][qe]N[Orthodox Opening]C[- url: https://senseis.xmp.net/?OrthodoxFuseki
 - size: 19
-- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][dc][ec][fc][gc][hc][ic][jc][kc][lc][mc][nc][oc][qc][rc][sc][ad][bd][cd][ed][fd][gd][hd][id][jd][kd][ld][md][nd][od][pd][qd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][re][se][af][bf][cf][df][ef][ff][gf][hf][if][jf][kf][lf][mf][nf][of][pf][qf][rf][sf]MA[pc][dd][qe]
-  )(
-    ;AB[cd][pc][qe]N[Enclosure Opening]C[- url: https://senseis.xmp.net/?ParallelFusekiBlackEnclosure
+- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][dc][ec][fc][gc][hc][ic][jc][kc][lc][mc][nc][oc][qc][rc][sc][ad][bd][cd][ed][fd][gd][hd][id][jd][kd][ld][md][nd][od][pd][qd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][re][se][af][bf][cf][df][ef][ff][gf][hf][if][jf][kf][lf][mf][nf][of][pf][qf][rf][sf]MA[pc][dd][qe])(;AB[cd][pc][qe]N[Enclosure Opening]C[- url: https://senseis.xmp.net/?ParallelFusekiBlackEnclosure
 - size: 19
-- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][dc][ec][fc][gc][hc][ic][jc][kc][lc][mc][nc][oc][qc][rc][sc][ad][bd][dd][ed][fd][gd][hd][id][jd][kd][ld][md][nd][od][pd][qd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][re][se][af][bf][cf][df][ef][ff][gf][hf][if][jf][kf][lf][mf][nf][of][pf][qf][rf][sf]MA[pc][cd][qe]
-  )(
-    ;AB[dc][nc][jd]AW[pd]N[Kobayashi Opening]C[- url: https://senseis.xmp.net/?KobayashiFuseki
+- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][dc][ec][fc][gc][hc][ic][jc][kc][lc][mc][nc][oc][qc][rc][sc][ad][bd][dd][ed][fd][gd][hd][id][jd][kd][ld][md][nd][od][pd][qd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][re][se][af][bf][cf][df][ef][ff][gf][hf][if][jf][kf][lf][mf][nf][of][pf][qf][rf][sf]MA[pc][cd][qe])(;AB[dc][nc][jd]AW[pd]N[Kobayashi Opening]C[- url: https://senseis.xmp.net/?KobayashiFuseki
 - size: 19
-- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][ec][fc][gc][hc][ic][jc][kc][lc][mc][oc][pc][qc][rc][sc][ad][bd][cd][dd][ed][fd][gd][hd][id][kd][ld][md][nd][od][qd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][qe][re][se]MA[dc][nc][jd][pd]
-  )(
-    ;AB[cd][nc][ic]AW[pd]N[Small Chinese Opening]C[- url: https://senseis.xmp.net/?SmallChineseFuseki
+- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][ec][fc][gc][hc][ic][jc][kc][lc][mc][oc][pc][qc][rc][sc][ad][bd][cd][dd][ed][fd][gd][hd][id][kd][ld][md][nd][od][qd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][qe][re][se]MA[dc][nc][jd][pd])(;AB[cd][nc][ic]AW[pd]N[Small Chinese Opening]C[- url: https://senseis.xmp.net/?SmallChineseFuseki
 - size: 19
-- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][dc][ec][fc][gc][hc][jc][kc][lc][mc][oc][pc][qc][rc][sc][ad][bd][dd][ed][fd][gd][hd][id][jd][kd][ld][md][nd][od][qd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][qe][re][se]MA[ic][nc][cd][pd]
-  )(
-    ;AB[cd][hc][nc]AW[pd]N[Micro Chinese Opening]C[- url: https://senseis.xmp.net/?MicroChinese
+- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][dc][ec][fc][gc][hc][jc][kc][lc][mc][oc][pc][qc][rc][sc][ad][bd][dd][ed][fd][gd][hd][id][jd][kd][ld][md][nd][od][qd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][qe][re][se]MA[ic][nc][cd][pd])(;AB[cd][hc][nc]AW[pd]N[Micro Chinese Opening]C[- url: https://senseis.xmp.net/?MicroChinese
 - size: 19
-- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][dc][ec][fc][gc][ic][jc][kc][lc][mc][oc][pc][qc][rc][sc][ad][bd][dd][ed][fd][gd][hd][id][jd][kd][ld][md][nd][od][qd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][qe][re][se]MA[hc][nc][cd][pd]
-  )(
-    ;AB[pd][jd][dd]N[Sanrensei Opening]C[- url: https://senseis.xmp.net/?SanrenseiFuseki
+- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][dc][ec][fc][gc][ic][jc][kc][lc][mc][oc][pc][qc][rc][sc][ad][bd][dd][ed][fd][gd][hd][id][jd][kd][ld][md][nd][od][qd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][qe][re][se]MA[hc][nc][cd][pd])(;AB[pd][jd][dd]N[Sanrensei Opening]C[- url: https://senseis.xmp.net/?SanrenseiFuseki
 - size: 19
-- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][dc][ec][fc][gc][hc][ic][jc][kc][lc][mc][nc][oc][pc][qc][rc][sc][ad][bd][cd][ed][fd][gd][hd][id][kd][ld][md][nd][od][qd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][qe][re][se]MA[dd][jd][pd]
-  )(
-    ;AB[dd][pd]N[Nirensei Opening]C[- url: https://senseis.xmp.net/?NirenseiFuseki
+- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][dc][ec][fc][gc][hc][ic][jc][kc][lc][mc][nc][oc][pc][qc][rc][sc][ad][bd][cd][ed][fd][gd][hd][id][kd][ld][md][nd][od][qd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][qe][re][se]MA[dd][jd][pd])(;AB[dd][pd]N[Nirensei Opening]C[- url: https://senseis.xmp.net/?NirenseiFuseki
 - size: 19
-- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][dc][ec][fc][gc][hc][ic][jc][kc][lc][mc][nc][oc][pc][qc][rc][sc][ad][bd][cd][ed][fd][gd][hd][id][jd][kd][ld][md][nd][od][qd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][qe][re][se]MA[dd][pd]
-  )(
-    ;AB[qd][pq][cp][pe]AW[dc][oc][qo]N[Shūsaku Opening]C[- url: https://senseis.xmp.net/?ShusakuFuseki
+- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][dc][ec][fc][gc][hc][ic][jc][kc][lc][mc][nc][oc][pc][qc][rc][sc][ad][bd][cd][ed][fd][gd][hd][id][jd][kd][ld][md][nd][od][qd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][pe][qe][re][se]MA[dd][pd])(;AB[qd][pq][cp][pe]AW[dc][oc][qo]N[Shūsaku Opening]C[- url: https://senseis.xmp.net/?ShusakuFuseki
 - size: 19
-- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][ec][fc][gc][hc][ic][jc][kc][lc][mc][nc][pc][qc][rc][sc][ad][bd][cd][dd][ed][fd][gd][hd][id][jd][kd][ld][md][nd][od][pd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][qe][re][se][af][bf][cf][df][ef][ff][gf][hf][if][jf][kf][lf][mf][nf][of][pf][qf][rf][sf][ag][bg][cg][dg][eg][fg][gg][hg][ig][jg][kg][lg][mg][ng][og][pg][qg][rg][sg][ah][bh][ch][dh][eh][fh][gh][hh][ih][jh][kh][lh][mh][nh][oh][ph][qh][rh][sh][ai][bi][ci][di][ei][fi][gi][hi][ii][ji][ki][li][mi][ni][oi][pi][qi][ri][si][aj][bj][cj][dj][ej][fj][gj][hj][ij][jj][kj][lj][mj][nj][oj][pj][qj][rj][sj][ak][bk][ck][dk][ek][fk][gk][hk][ik][jk][kk][lk][mk][nk][ok][pk][qk][rk][sk][al][bl][cl][dl][el][fl][gl][hl][il][jl][kl][ll][ml][nl][ol][pl][ql][rl][sl][am][bm][cm][dm][em][fm][gm][hm][im][jm][km][lm][mm][nm][om][pm][qm][rm][sm][an][bn][cn][dn][en][fn][gn][hn][in][jn][kn][ln][mn][nn][on][pn][qn][rn][sn][ao][bo][co][do][eo][fo][go][ho][io][jo][ko][lo][mo][no][oo][po][ro][so][ap][bp][dp][ep][fp][gp][hp][ip][jp][kp][lp][mp][np][op][pp][qp][rp][sp][aq][bq][cq][dq][eq][fq][gq][hq][iq][jq][kq][lq][mq][nq][oq][qq][rq][sq][ar][br][cr][dr][er][fr][gr][hr][ir][jr][kr][lr][mr][nr][or][pr][qr][rr][sr][as][bs][cs][ds][es][fs][gs][hs][is][js][ks][ls][ms][ns][os][ps][qs][rs][ss]MA[dc][oc][qd][pe][qo][cp][pq]
-  )(
-    ;AW[qd]AB[oc]N[Low Approach]C[- url: https://senseis.xmp.net/?34PointLowApproach
-- type: corner]CR[na][nb][nc][nd][ne][oa][ob][od][oe][pa][pb][pc][pd][pe][qa][qb][qc][qe][ra][rb][rc][rd][re][sa][sb][sc][sd][se]MA[oc]
-  )(
-    ;AW[pd]AB[nc]N[Low Approach]C[- url: https://senseis.xmp.net/?44PointLowApproach
-- type: corner]CR[ma][mb][mc][md][me][na][nb][nd][ne][oa][ob][oc][od][oe][pa][pb][pc][pe][qa][qb][qc][qd][qe][ra][rb][rc][rd][re][sa][sb][sc][sd][se]MA[nc]
-  )(
-    ;AW[qd]AB[od]N[High Approach]C[- url: https://senseis.xmp.net/?34PointHighApproach
-- type: corner]CR[na][nb][nc][nd][ne][oa][ob][oc][oe][pa][pb][pc][pd][pe][qa][qb][qc][qe][ra][rb][rc][rd][re][sa][sb][sc][sd][se]MA[od]
-  )(
-    ;AW[pd]AB[nd]N[High Approach]C[- url: https://senseis.xmp.net/?44PointHighApproach
-- type: corner]CR[ma][mb][mc][md][me][na][nb][nc][ne][oa][ob][oc][od][oe][pa][pb][pc][pe][qa][qb][qc][qd][qe][ra][rb][rc][rd][re][sa][sb][sc][sd][se]MA[nd]
-  )(
-    ;AB[oc][qd]N[Low Enclosure]C[- url: https://senseis.xmp.net/?3453Enclosure
-- type: corner]CR[na][oa][pa][qa][ra][sa][nb][ob][pb][qb][rb][sb][nc][pc][qc][rc][sc][nd][od][pd][rd][sd][ne][oe][pe][qe][re][se]MA[oc][qd]
-  )(
-    ;AB[nc][pd]N[Low Enclosure]C[- url: https://senseis.xmp.net/?4463Enclosure
-- type: corner]CR[ma][na][oa][pa][qa][ra][sa][mb][nb][ob][pb][qb][rb][sb][mc][oc][pc][qc][rc][sc][md][nd][od][qd][rd][sd][me][ne][oe][pe][qe][re][se]MA[nc][pd]
-  )(
-    ;AB[od][qd]N[High Enclosure]C[- url: https://senseis.xmp.net/?3454Enclosure
-- type: corner]CR[na][oa][pa][qa][ra][sa][nb][ob][pb][qb][rb][sb][nc][oc][pc][qc][rc][sc][nd][pd][rd][sd][ne][oe][pe][qe][re][se]MA[od][qd]
-  )(
-    ;AB[nd][pd]N[High Enclosure]C[- url: https://senseis.xmp.net/?4464Enclosure
-- type: corner]CR[ma][na][oa][pa][qa][ra][sa][mb][nb][ob][pb][qb][rb][sb][mc][nc][oc][pc][qc][rc][sc][md][od][qd][rd][sd][me][ne][oe][pe][qe][re][se]MA[nd][pd]
-  )(
-    ;AB[nc][qd]N[Low Enclosure]C[- url: https://senseis.xmp.net/?3463Enclosure
-- type: corner]CR[ma][na][oa][pa][qa][ra][sa][mb][nb][ob][pb][qb][rb][sb][mc][oc][pc][qc][rc][sc][md][nd][od][pd][rd][sd][me][ne][oe][pe][qe][re][se]MA[nc][qd]
-  )(
-    ;AB[mc][pd]N[Low Enclosure]C[- url: https://senseis.xmp.net/?4473Enclosure
-- type: corner]CR[la][ma][na][oa][pa][qa][ra][sa][lb][mb][nb][ob][pb][qb][rb][sb][lc][nc][oc][pc][qc][rc][sc][ld][md][nd][od][qd][rd][sd][le][me][ne][oe][pe][qe][re][se]MA[mc][pd]
-  )(
-    ;AB[nd][qd]N[High Enclosure]C[- url: https://senseis.xmp.net/?3464Enclosure
-- type: corner]CR[ma][na][oa][pa][qa][ra][sa][mb][nb][ob][pb][qb][rb][sb][mc][nc][oc][pc][qc][rc][sc][md][od][pd][rd][sd][me][ne][oe][pe][qe][re][se]MA[nd][qd]
-  )(
-    ;AB[md][pd]N[High Enclosure]C[- url: https://senseis.xmp.net/?4474Enclosure
-- type: corner]CR[la][ma][na][oa][pa][qa][ra][sa][lb][mb][nb][ob][pb][qb][rb][sb][lc][mc][nc][oc][pc][qc][rc][sc][ld][nd][od][qd][rd][sd][le][me][ne][oe][pe][qe][re][se]MA[md][pd]
-  )(
-    ;AB[dd][de][ef][ff][fd]N[Mouth Shape]CR[ec][ed][fe][ge]MA[dd][fd][de][ef][ff]C[- url: https://senseis.xmp.net/?MouthShape]
-  )(
-    ;AB[dd][de][fd][ff]N[Table Shape]MA[dd][fd][de][ff]CR[ed][ee][fe][ge]C[- url: https://senseis.xmp.net/?TableShape]
-  )(
-    ;AB[dd][ed][df][fg]N[Tippy Table]CR[de][ee][ef][ff]MA[fg]C[- url: https://senseis.xmp.net/?TippyTable]
-  )(
-    ;AB[dd][ed][df][ef]N[Bamboo Joint]MA[dd][ed][df][ef]CR[de][ee]C[- url: https://senseis.xmp.net/?BambooJoint]
-  )(
-    ;AB[dd][de][fd][ge]N[Trapezium]CR[ed][gd][ee][fe][ff]MA[fd][ge]C[- url: https://senseis.xmp.net/?TrapeziumShape]
-  )(
-    ;AB[dd][ce][ee][df]N[Diamond]MA[dd][ce][ee][df]CR[de]C[- url: https://senseis.xmp.net/?Diamond]
-  )(
-    ;AB[dd][ee][fd]N[Tiger’s Mouth]CR[ec][ed]MA[dd][fd][ee]C[- url: https://senseis.xmp.net/?TigersMouth]
-  )(
-    ;AB[dd][de][ed]N[Empty Triangle]MA[dd][ed][de]CR[ee]C[- url: https://senseis.xmp.net/?EmptyTriangle]
-  )(
-    ;AB[dd][ed][ee]AW[de]N[Turn]MA[dd][ee]C[- url: https://senseis.xmp.net/?Turn]
-  )(
-    ;AB[dd][de]N[Stretch]MA[dd][de]C[- url: https://senseis.xmp.net/?Stretch]
-  )(
-    ;AB[dd][ee]N[Diagonal]MA[dd][ee]CR[ed][de]C[- url: https://senseis.xmp.net/?Kosumi]
-  )(
-    ;AB[dd]AW[ed][cd]N[Wedge]CR[dc][de]MA[dd]C[- url: https://senseis.xmp.net/?Wedge]
-  )(
-    ;AB[dd][ee]AW[ed]N[Hane]MA[dd][ee]CR[de]C[- url: https://senseis.xmp.net/?Hane]
-  )(
-    ;AB[dd][ee]AW[ed][de]N[Cut]MA[dd][ee]C[- url: https://senseis.xmp.net/?Cut]
-  )(
-    ;AB[dd][fd][ff][df]N[Square]C[- url: https://senseis.xmp.net/?SquareGoodShape]MA[dd][df][fd][ff]CR[de][ed][ee][fe]
-  )(
-    ;AB[dd][ef][fc][ge]N[Throwing Star]C[- url: https://senseis.xmp.net/?ThrowingStarShape]AE[fd][ff][df]MA[dd][ef][fc][ge]CR[de][ec][ed][ee][fd][fe][ff][gd]
-  )(
-    ;AB[dd][fe][df][fg]N[Parallelogram]MA[dd][fe][df][fg]CR[ee][ef]C[- url: https://senseis.xmp.net/?Parallelogram]
-  )(
-    ;AB[dd][df][fe]N[Dog’s Head]MA[dd][fe][df]CR[ed][de][ee][ef]C[- url: https://senseis.xmp.net/?SakeBottleShape]
-  )(
-    ;AB[dd][df][ge]N[Horse’s Head]MA[dd][ge][df]CR[ed][de][ee][fe][ef]C[- url: https://senseis.xmp.net/?HorseHead]
-  )(
-    ;AB[dd]AW[ed]N[Attachment]CR[dc][ec][de][ee]MA[dd]C[- url: https://senseis.xmp.net/?Attachment]
-  )(
-    ;AB[dd][fd]N[One-Point Jump]MA[dd][fd]CR[ed]C[- url: https://senseis.xmp.net/?OnePointJump]
-  )(
-    ;AB[dd][fe][eg]N[Big Bulge]MA[dd][fe][eg]CR[ee][ef]C[- url: https://senseis.xmp.net/?BigBulge]
-  )(
-    ;AB[dd][fe]N[Small Knight]MA[dd][fe]CR[ed][ee]C[- url: https://senseis.xmp.net/?Keima]
-  )(
-    ;AB[dd][gd]N[Two-Point Jump]MA[dd][gd]CR[ed][fd]C[- url: https://senseis.xmp.net/?TwoPointJump]
-  )(
-    ;AB[dd][ge]N[Large Knight]MA[dd][ge]CR[ed][fd][ee][fe]C[- url: https://senseis.xmp.net/?LargeKnightsMove]
-  )(
-    ;PL[B]N[3-3 Point Invasion]C[- url: https://senseis.xmp.net/?SanSanInvasion
-- type: corner]AE[dd]AB[qc]CR[na][nb][nc][nd][oa][ob][oc][od][oe][pa][pb][pc][pe][pf][qa][qb][qd][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[qc]AW[pd]
-  )(
-    ;AB[dd]AW[ee]N[Shoulder Hit]CR[cc][dc][ec][cd][ed][ce][de]MA[dd]C[- url: https://senseis.xmp.net/?ShoulderHit]
-  )(
-    ;AB[dd][ff]N[Diagonal Jump]MA[dd][ff]CR[ed][de][ee][fe][ef]C[- url: https://senseis.xmp.net/?DiagonalJump]
-  )(
-    ;PL[B]N[3-4 Point]C[- url: https://senseis.xmp.net/?Komoku
-- type: corner]AE[dd][pd]AB[qd]CR[na][nb][nc][nd][oa][ob][oc][od][oe][pa][pb][pc][pd][pe][pf][qa][qb][qc][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[qd]
-  )(
-    ;PL[B]N[4-4 Point]C[- url: https://senseis.xmp.net/?44Point
-- type: corner]AE[dd]AB[pd]CR[na][nb][nc][nd][oa][ob][oc][od][oe][pa][pb][pc][pe][pf][qa][qb][qc][qd][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[pd]
-  )(
-    ;PL[B]N[3-3 Point]C[- url: https://senseis.xmp.net/?Sansan
-- type: corner]AE[dd][pd]AB[qc]CR[na][nb][nc][nd][oa][ob][oc][od][oe][pa][pb][pc][pd][pe][pf][qa][qb][qd][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[qc]
-  )(
-    ;PL[B]N[3-5 Point]C[- url: https://senseis.xmp.net/?Mokuhazushi
-- type: corner]AE[dd][pd]AB[qe]CR[na][nb][nc][nd][oa][ob][oc][od][oe][pa][pb][pc][pd][pe][pf][qa][qb][qc][qd][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[qe]
-  )(
-    ;PL[B]N[4-5 Point]C[- url: https://senseis.xmp.net/?Takamoku
-- type: corner]AE[dd][pd]AB[pe]CR[na][nb][nc][nd][oa][ob][oc][od][oe][pa][pb][pc][pd][pf][qa][qb][qc][qd][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[pe]
-  )(
-    ;PL[B]N[6-3 Point]C[- url: https://senseis.xmp.net/?Omokuhazushi
-- type: corner]AE[dd][pd]AB[qf]CR[na][nb][nc][nd][oa][ob][oc][od][oe][pa][pb][pc][pd][pe][pf][qa][qb][qc][qd][qe][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[qf]
-  )(
-    ;PL[B]N[6-4 Point]C[- url: https://senseis.xmp.net/?Otakamoku
-- type: corner]AE[dd][pd]AB[pf]CR[na][nb][nc][nd][oa][ob][oc][od][oe][pa][pb][pc][pd][pe][qa][qb][qc][qd][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[pf]
-  )(
-    ;PL[B]N[5-5 Point]C[- url: https://senseis.xmp.net/?Gonogo
-- type: corner]AE[dd][pd]AB[oe]CR[na][nb][nc][nd][oa][ob][oc][od][pa][pb][pc][pd][pe][pf][qa][qb][qc][qd][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[oe]
-  )
-)
+- type: corner]CR[aa][ba][ca][da][ea][fa][ga][ha][ia][ja][ka][la][ma][na][oa][pa][qa][ra][sa][ab][bb][cb][db][eb][fb][gb][hb][ib][jb][kb][lb][mb][nb][ob][pb][qb][rb][sb][ac][bc][cc][ec][fc][gc][hc][ic][jc][kc][lc][mc][nc][pc][qc][rc][sc][ad][bd][cd][dd][ed][fd][gd][hd][id][jd][kd][ld][md][nd][od][pd][rd][sd][ae][be][ce][de][ee][fe][ge][he][ie][je][ke][le][me][ne][oe][qe][re][se][af][bf][cf][df][ef][ff][gf][hf][if][jf][kf][lf][mf][nf][of][pf][qf][rf][sf][ag][bg][cg][dg][eg][fg][gg][hg][ig][jg][kg][lg][mg][ng][og][pg][qg][rg][sg][ah][bh][ch][dh][eh][fh][gh][hh][ih][jh][kh][lh][mh][nh][oh][ph][qh][rh][sh][ai][bi][ci][di][ei][fi][gi][hi][ii][ji][ki][li][mi][ni][oi][pi][qi][ri][si][aj][bj][cj][dj][ej][fj][gj][hj][ij][jj][kj][lj][mj][nj][oj][pj][qj][rj][sj][ak][bk][ck][dk][ek][fk][gk][hk][ik][jk][kk][lk][mk][nk][ok][pk][qk][rk][sk][al][bl][cl][dl][el][fl][gl][hl][il][jl][kl][ll][ml][nl][ol][pl][ql][rl][sl][am][bm][cm][dm][em][fm][gm][hm][im][jm][km][lm][mm][nm][om][pm][qm][rm][sm][an][bn][cn][dn][en][fn][gn][hn][in][jn][kn][ln][mn][nn][on][pn][qn][rn][sn][ao][bo][co][do][eo][fo][go][ho][io][jo][ko][lo][mo][no][oo][po][ro][so][ap][bp][dp][ep][fp][gp][hp][ip][jp][kp][lp][mp][np][op][pp][qp][rp][sp][aq][bq][cq][dq][eq][fq][gq][hq][iq][jq][kq][lq][mq][nq][oq][qq][rq][sq][ar][br][cr][dr][er][fr][gr][hr][ir][jr][kr][lr][mr][nr][or][pr][qr][rr][sr][as][bs][cs][ds][es][fs][gs][hs][is][js][ks][ls][ms][ns][os][ps][qs][rs][ss]MA[dc][oc][qd][pe][qo][cp][pq])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh]AW[qe]AB[pc][qg]CR[oa][ob][oc][od][oe][of][og][oh][pa][pb][pd][pe][pf][pg][ph][qa][qb][qc][qd][qf][qh][ra][rb][rc][rd][re][rf][rg][rh][sa][sb][sc][sd][se][sf][sg][sh]MA[qg])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][qg]AW[qe]AB[pc][pg]CR[oa][ob][oc][od][oe][of][og][oh][pa][pb][pd][pe][pf][ph][qa][qb][qc][qd][qf][qg][qh][ra][rb][rc][rd][re][rf][rg][rh][sa][sb][sc][sd][se][sf][sg][sh]MA[pg])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qg]AW[qe]AB[pc][qh]CR[oa][ob][oc][od][oe][of][og][oh][oi][pa][pb][pd][pe][pf][pg][ph][pi][qa][qb][qc][qd][qf][qg][qi][ra][rb][rc][rd][re][rf][rg][rh][ri][sa][sb][sc][sd][se][sf][sg][sh][si]MA[qh])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][qg]AW[qe]AB[pc][ph]CR[oa][ob][oc][od][oe][of][og][oh][oi][pa][pb][pd][pe][pf][pg][pi][qa][qb][qc][qd][qf][qg][qh][qi][ra][rb][rc][rd][re][rf][rg][rh][ri][sa][sb][sc][sd][se][sf][sg][sh][si]MA[ph])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][qe]AW[pe]AB[pc][qg]CR[oa][ob][oc][od][oe][of][og][oh][pa][pb][pd][pf][pg][ph][qa][qb][qc][qd][qe][qf][qh][ra][rb][rc][rd][re][rf][rg][rh][sa][sb][sc][sd][se][sf][sg][sh]MA[qg])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][qe][qg]AW[pe]AB[pc][pg]CR[oa][ob][oc][od][oe][of][og][oh][pa][pb][pd][pf][ph][qa][qb][qc][qd][qe][qf][qg][qh][ra][rb][rc][rd][re][rf][rg][rh][sa][sb][sc][sd][se][sf][sg][sh]MA[pg])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qe][qg][pg]AW[pe]AB[pc][qh]CR[oa][ob][oc][od][oe][of][og][oh][oi][pa][pb][pd][pf][pg][ph][pi][qa][qb][qc][qd][qe][qf][qg][qi][ra][rb][rc][rd][re][rf][rg][rh][ri][sa][sb][sc][sd][se][sf][sg][sh][si]MA[qh])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][qe][qg][pg]AW[pe]AB[pc][ph]CR[oa][ob][oc][od][oe][of][og][oh][oi][pa][pb][pd][pf][pg][pi][qa][qb][qc][qd][qe][qf][qg][qh][qi][ra][rb][rc][rd][re][rf][rg][rh][ri][sa][sb][sc][sd][se][sf][sg][sh][si]MA[ph])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qe][qg][pg][pe]AB[pc][qh]AW[qf]CR[oa][ob][oc][od][oe][of][og][oh][oi][pa][pb][pd][pe][pf][pg][ph][pi][qa][qb][qc][qd][qe][qg][qi][ra][rb][rc][rd][re][rf][rg][rh][ri][sa][sb][sc][sd][se][sf][sg][sh][si]MA[qh])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qe][qg][pg][qh][pe]AB[pc][ph]AW[qf]CR[oa][ob][oc][od][oe][of][og][oh][oi][pa][pb][pd][pe][pf][pg][pi][qa][qb][qc][qd][qe][qg][qh][qi][ra][rb][rc][rd][re][rf][rg][rh][ri][sa][sb][sc][sd][se][sf][sg][sh][si]MA[ph])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qe][qg][pg][qh][pe]AB[pc][qi]AW[qf]CR[oa][ob][oc][od][oe][of][og][oh][oi][oj][pa][pb][pd][pe][pf][pg][ph][pi][pj][qa][qb][qc][qd][qe][qg][qh][qj][ra][rb][rc][rd][re][rf][rg][rh][ri][rj][sa][sb][sc][sd][se][sf][sg][sh][si][sj]MA[qi])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qe][qg][pg][qh][pe]AB[pc][pi]AW[qf]CR[oa][ob][oc][od][oe][of][og][oh][oi][oj][pa][pb][pd][pe][pf][pg][ph][pj][qa][qb][qc][qd][qe][qg][qh][qi][qj][ra][rb][rc][rd][re][rf][rg][rh][ri][rj][sa][sb][sc][sd][se][sf][sg][sh][si][sj]MA[pi])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qe][qg][pg][pe][qf]AB[pc][qh]AW[pf]CR[oa][ob][oc][od][oe][of][og][oh][oi][pa][pb][pd][pe][pg][ph][pi][qa][qb][qc][qd][qe][qf][qg][qi][ra][rb][rc][rd][re][rf][rg][rh][ri][sa][sb][sc][sd][se][sf][sg][sh][si]MA[qh])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qe][qg][pg][qh][pe][qf]AB[pc][ph]AW[pf]CR[oa][ob][oc][od][oe][of][og][oh][oi][pa][pb][pd][pe][pg][pi][qa][qb][qc][qd][qe][qf][qg][qh][qi][ra][rb][rc][rd][re][rf][rg][rh][ri][sa][sb][sc][sd][se][sf][sg][sh][si]MA[ph])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qe][qg][pg][qh][pe][qf]AB[pc][qi]AW[pf]CR[oa][ob][oc][od][oe][of][og][oh][oi][oj][pa][pb][pd][pe][pg][ph][pi][pj][qa][qb][qc][qd][qe][qf][qg][qh][qj][ra][rb][rc][rd][re][rf][rg][rh][ri][rj][sa][sb][sc][sd][se][sf][sg][sh][si][sj]MA[qi])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qe][qg][pg][qh][pe][qf]AB[pc][pi]AW[pf]CR[oa][ob][oc][od][oe][of][og][oh][oi][oj][pa][pb][pd][pe][pg][ph][pj][qa][qb][qc][qd][qe][qf][qg][qh][qi][qj][ra][rb][rc][rd][re][rf][rg][rh][ri][rj][sa][sb][sc][sd][se][sf][sg][sh][si][sj]MA[pi])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qg][pc][qe]AB[pd][qh]AW[qf]CR[oa][ob][oc][od][oe][of][og][oh][oi][pa][pb][pc][pe][pf][pg][ph][pi][qa][qb][qc][qd][qe][qg][qi][ra][rb][rc][rd][re][rf][rg][rh][ri][sa][sb][sc][sd][se][sf][sg][sh][si]MA[qh])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][qg][pc][qe]AB[pd][ph]AW[qf]CR[oa][ob][oc][od][oe][of][og][oh][oi][pa][pb][pc][pe][pf][pg][pi][qa][qb][qc][qd][qe][qg][qh][qi][ra][rb][rc][rd][re][rf][rg][rh][ri][sa][sb][sc][sd][se][sf][sg][sh][si]MA[ph])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][qg][pc][qe]AB[pd][qi]AW[qf]CR[oa][ob][oc][od][oe][of][og][oh][oi][oj][pa][pb][pc][pe][pf][pg][ph][pi][pj][qa][qb][qc][qd][qe][qg][qh][qj][ra][rb][rc][rd][re][rf][rg][rh][ri][rj][sa][sb][sc][sd][se][sf][sg][sh][si][sj]MA[qi])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][qg][pc][qe]AB[pd][pi]AW[qf]CR[oa][ob][oc][od][oe][of][og][oh][oi][oj][pa][pb][pc][pe][pf][pg][ph][pj][qa][qb][qc][qd][qe][qg][qh][qi][qj][ra][rb][rc][rd][re][rf][rg][rh][ri][rj][sa][sb][sc][sd][se][sf][sg][sh][si][sj]MA[pi])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][pc][qe]AB[pd][qi]AW[qg]CR[oa][ob][oc][od][oe][of][og][oh][oi][oj][pa][pb][pc][pe][pf][pg][ph][pi][pj][qa][qb][qc][qd][qe][qf][qh][qj][ra][rb][rc][rd][re][rf][rg][rh][ri][rj][sa][sb][sc][sd][se][sf][sg][sh][si][sj]MA[qi])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][pc][qe]AB[pd][pi]AW[qg]CR[oa][ob][oc][od][oe][of][og][oh][oi][oj][pa][pb][pc][pe][pf][pg][ph][pj][qa][qb][qc][qd][qe][qf][qh][qi][qj][ra][rb][rc][rd][re][rf][rg][rh][ri][rj][sa][sb][sc][sd][se][sf][sg][sh][si][sj]MA[pi])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][pc][qe]AB[pd][qj]AW[qg]CR[oa][ob][oc][od][oe][of][og][oh][oi][oj][ok][pa][pb][pc][pe][pf][pg][ph][pi][pj][pk][qa][qb][qc][qd][qe][qf][qh][qi][qk][ra][rb][rc][rd][re][rf][rg][rh][ri][rj][rk][sa][sb][sc][sd][se][sf][sg][sh][si][sj][sk]MA[qj])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][pc][qe]AB[pd][pj]AW[qg]CR[oa][ob][oc][od][oe][of][og][oh][oi][oj][ok][pa][pb][pc][pe][pf][pg][ph][pi][pk][qa][qb][qc][qd][qe][qf][qh][qi][qj][qk][ra][rb][rc][rd][re][rf][rg][rh][ri][rj][rk][sa][sb][sc][sd][se][sf][sg][sh][si][sj][sk]MA[pj])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qg][pc][qe]AB[pd][qh]AW[pf]CR[oa][ob][oc][od][oe][of][og][oh][oi][pa][pb][pc][pe][pg][ph][pi][qa][qb][qc][qd][qe][qf][qg][qi][ra][rb][rc][rd][re][rf][rg][rh][ri][sa][sb][sc][sd][se][sf][sg][sh][si]MA[qh])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][qg][pc][qe]AB[pd][ph]AW[pf]CR[oa][ob][oc][od][oe][of][og][oh][oi][pa][pb][pc][pe][pg][pi][qa][qb][qc][qd][qe][qf][qg][qh][qi][ra][rb][rc][rd][re][rf][rg][rh][ri][sa][sb][sc][sd][se][sf][sg][sh][si]MA[ph])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][qg][pc][qe]AB[pd][qi]AW[pf]CR[oa][ob][oc][od][oe][of][og][oh][oi][oj][pa][pb][pc][pe][pg][ph][pi][pj][qa][qb][qc][qd][qe][qf][qg][qh][qj][ra][rb][rc][rd][re][rf][rg][rh][ri][rj][sa][sb][sc][sd][se][sf][sg][sh][si][sj]MA[qi])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][qg][pc][qe]AB[pd][pi]AW[pf]CR[oa][ob][oc][od][oe][of][og][oh][oi][oj][pa][pb][pc][pe][pg][ph][pj][qa][qb][qc][qd][qe][qf][qg][qh][qi][qj][ra][rb][rc][rd][re][rf][rg][rh][ri][rj][sa][sb][sc][sd][se][sf][sg][sh][si][sj]MA[pi])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][qg][pc][qe]AB[pd][qi]AW[pg]CR[oa][ob][oc][od][oe][of][og][oh][oi][oj][pa][pb][pc][pe][pf][ph][pi][pj][qa][qb][qc][qd][qe][qf][qg][qh][qj][ra][rb][rc][rd][re][rf][rg][rh][ri][rj][sa][sb][sc][sd][se][sf][sg][sh][si][sj]MA[qi])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][qg][pc][qe]AB[pd][pi]AW[pg]CR[oa][ob][oc][od][oe][of][og][oh][oi][oj][pa][pb][pc][pe][pf][ph][pj][qa][qb][qc][qd][qe][qf][qg][qh][qi][qj][ra][rb][rc][rd][re][rf][rg][rh][ri][rj][sa][sb][sc][sd][se][sf][sg][sh][si][sj]MA[pi])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][qg][pc][qe]AB[pd][qj]AW[pg]CR[oa][ob][oc][od][oe][of][og][oh][oi][oj][ok][pa][pb][pc][pe][pf][ph][pi][pj][pk][qa][qb][qc][qd][qe][qf][qg][qh][qi][qk][ra][rb][rc][rd][re][rf][rg][rh][ri][rj][rk][sa][sb][sc][sd][se][sf][sg][sh][si][sj][sk]MA[qj])(;N[Pincer]C[- url: https://senseis.xmp.net/?Hasami
+- type: corner]AE[oc][qd][qc][qh][qg][pc][qe]AB[pd][pj]AW[pg]CR[oa][ob][oc][od][oe][of][og][oh][oi][oj][ok][pa][pb][pc][pe][pf][ph][pi][pk][qa][qb][qc][qd][qe][qf][qg][qh][qi][qj][qk][ra][rb][rc][rd][re][rf][rg][rh][ri][rj][rk][sa][sb][sc][sd][se][sf][sg][sh][si][sj][sk]MA[pj])(;N[Enclosure]C[- url: https://senseis.xmp.net/?3353Enclosure
+- type: corner]AE[qd][oc]AB[qc][qe]CR[na][nb][nc][nd][ne][nf][ng][oa][ob][oc][od][oe][of][og][pa][pb][pc][pd][pe][pf][pg][qa][qb][qd][qf][qg][ra][rb][rc][rd][re][rf][rg][sa][sb][sc][sd][se][sf][sg]MA[qc][qe])(;N[Enclosure]C[- url: https://senseis.xmp.net/?3363Enclosure
+- type: corner]AE[qd][oc][qe]AB[qc][qf]CR[na][nb][nc][nd][ne][nf][ng][oa][ob][oc][od][oe][of][og][pa][pb][pc][pd][pe][pf][pg][qa][qb][qd][qe][qg][ra][rb][rc][rd][re][rf][rg][sa][sb][sc][sd][se][sf][sg]MA[qc][qf])(;N[Enclosure]C[- url: https://senseis.xmp.net/?3364Enclosure
+- type: corner]AE[oc][qd]AB[qc][pf]CR[na][nb][nc][nd][ne][nf][ng][oa][ob][oc][od][oe][of][og][pa][pb][pc][pd][pe][pg][qa][qb][qd][qe][qf][qg][ra][rb][rc][rd][re][rf][rg][sa][sb][sc][sd][se][sf][sg]MA[pf][qc])(;N[Enclosure]C[- url: https://senseis.xmp.net/?3354Enclosure
+- type: corner]AE[qd][oc]AB[qc][pe]CR[na][nb][nc][nd][ne][nf][ng][oa][ob][oc][od][oe][of][og][pa][pb][pc][pd][pf][pg][qa][qb][qd][qe][qf][qg][ra][rb][rc][rd][re][rf][rg][sa][sb][sc][sd][se][sf][sg]MA[pe][qc])(;N[Enclosure]C[- url: https://senseis.xmp.net/?3554Enclosure
+- type: corner]AE[qd][oc]AB[qe][od]CR[na][nb][nc][nd][ne][nf][ng][oa][ob][oc][oe][of][og][pa][pb][pc][pd][pe][pf][pg][qa][qb][qc][qd][qf][qg][ra][rb][rc][rd][re][rf][rg][sa][sb][sc][sd][se][sf][sg]MA[od][qe])(;AB[qe][nd]N[Enclosure]C[- url: https://senseis.xmp.net/?3564Enclosure
+- type: corner]AE[qd][oc]CR[ma][mb][mc][md][me][mf][mg][na][nb][nc][ne][nf][ng][oa][ob][oc][od][oe][of][og][pa][pb][pc][pd][pe][pf][pg][qa][qb][qc][qd][qf][qg][ra][rb][rc][rd][re][rf][rg][sa][sb][sc][sd][se][sf][sg]MA[nd][qe])(;AB[qe][oe]N[Enclosure]C[- url: https://senseis.xmp.net/?3555Enclosure
+- type: corner]AE[qd][oc]CR[ma][mb][mc][md][me][mf][mg][na][nb][nc][nd][ne][nf][ng][oa][ob][oc][od][of][og][pa][pb][pc][pd][pe][pf][pg][qa][qb][qc][qd][qf][qg][ra][rb][rc][rd][re][rf][rg][sa][sb][sc][sd][se][sf][sg]MA[oe][qe])(;AW[qd]AB[nc]N[Low Approach]C[- url: https://senseis.xmp.net/?34PointDistantLowApproach
+- type: corner]AE[oc]CR[ma][mb][mc][md][me][mf][na][nb][nd][ne][nf][oa][ob][oc][od][oe][of][pa][pb][pc][pd][pe][pf][qa][qb][qc][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[nc])(;N[Low Approach]C[- url: https://senseis.xmp.net/?44PointDistantLowApproach
+- type: corner]AE[oc][nc][qd]AW[pd]AB[mc]CR[la][lb][lc][ld][le][lf][ma][mb][md][me][mf][na][nb][nc][nd][ne][nf][oa][ob][oc][od][oe][of][pa][pb][pc][pe][pf][qa][qb][qc][qd][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[mc])(;AW[qd]C[- url: https://senseis.xmp.net/?DistantHighApproach
+- type: corner]N[High Approach]AE[oc]AB[nd]CR[ma][mb][mc][md][me][mf][na][nb][nc][ne][nf][oa][ob][oc][od][oe][of][pa][pb][pc][pd][pe][pf][qa][qb][qc][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[nd])(;N[High Approach]C[- url: https://senseis.xmp.net/?DistantHighApproach
+- type: corner]AE[oc][qd]AW[pd]AB[md]CR[la][lb][lc][ld][le][lf][ma][mb][mc][me][mf][na][nb][nc][nd][ne][nf][oa][ob][oc][od][oe][of][pa][pb][pc][pe][pf][qa][qb][qc][qd][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[md])(;N[Low Approach]C[- url: https://senseis.xmp.net/?33PointLowApproach
+- type: corner]AE[oc][qd]AW[qc]AB[qe]CR[na][nb][nc][nd][ne][nf][ng][oa][ob][oc][od][oe][of][og][pa][pb][pc][pd][pe][pf][pg][qa][qb][qd][qf][qg][ra][rb][rc][rd][re][rf][rg][sa][sb][sc][sd][se][sf][sg]MA[qe])(;C[- url: https://senseis.xmp.net/?33PointHighApproach
+- type: corner]AE[oc][qd][qe]AW[qc]AB[pe]N[High Approach]CR[na][nb][nc][nd][ne][nf][ng][oa][ob][oc][od][oe][of][og][pa][pb][pc][pd][pf][pg][qa][qb][qd][qe][qf][qg][ra][rb][rc][rd][re][rf][rg][sa][sb][sc][sd][se][sf][sg]MA[pe])(;N[Low Approach]C[- url: https://senseis.xmp.net/?35PointLowApproach
+- type: corner]AE[oc][qd][qc]AW[qe]AB[pc]CR[na][nb][nc][nd][ne][nf][ng][oa][ob][oc][od][oe][of][og][pa][pb][pd][pe][pf][pg][qa][qb][qc][qd][qf][qg][ra][rb][rc][rd][re][rf][rg][sa][sb][sc][sd][se][sf][sg]MA[pc])(;N[High Approach]C[- url: https://senseis.xmp.net/?35PointHighApproach
+- type: corner]AE[oc][qd][qc]AW[qe]AB[od]CR[ma][mb][mc][md][me][mf][mg][na][nb][nc][nd][ne][nf][ng][oa][ob][oc][oe][of][og][pa][pb][pc][pd][pe][pf][pg][qa][qb][qc][qd][qf][qg][ra][rb][rc][rd][re][rf][rg][sa][sb][sc][sd][se][sf][sg]MA[od])(;N[High Approach]C[- url: https://senseis.xmp.net/?45Point43Approach
+- type: corner]AE[oc][qd][qe][qc]AB[pc]AW[pe]CR[na][nb][nc][nd][ne][nf][ng][oa][ob][oc][od][oe][of][og][pa][pb][pd][pf][pg][qa][qb][qc][qd][qe][qf][qg][ra][rb][rc][rd][re][rf][rg][sa][sb][sc][sd][se][sf][sg]MA[pc])(;N[Low Approach]C[- url: https://senseis.xmp.net/?45Point33Approach
+- type: corner]AE[oc][qd][qe][pc]AW[pe]AB[qc]CR[na][nb][nc][nd][ne][nf][ng][oa][ob][oc][od][oe][of][og][pa][pb][pc][pd][pf][pg][qa][qb][qd][qe][qf][qg][ra][rb][rc][rd][re][rf][rg][sa][sb][sc][sd][se][sf][sg]MA[qc])(;AW[qd]AB[oc]N[Low Approach]C[- url: https://senseis.xmp.net/?34PointLowApproach
+- type: corner]CR[na][nb][nc][nd][ne][oa][ob][od][oe][pa][pb][pc][pd][pe][qa][qb][qc][qe][ra][rb][rc][rd][re][sa][sb][sc][sd][se]MA[oc])(;AW[pd]AB[nc]N[Low Approach]C[- url: https://senseis.xmp.net/?44PointLowApproach
+- type: corner]CR[ma][mb][mc][md][me][na][nb][nd][ne][oa][ob][oc][od][oe][pa][pb][pc][pe][qa][qb][qc][qd][qe][ra][rb][rc][rd][re][sa][sb][sc][sd][se]MA[nc])(;AW[qd]AB[od]N[High Approach]C[- url: https://senseis.xmp.net/?34PointHighApproach
+- type: corner]CR[na][nb][nc][nd][ne][oa][ob][oc][oe][pa][pb][pc][pd][pe][qa][qb][qc][qe][ra][rb][rc][rd][re][sa][sb][sc][sd][se]MA[od])(;AW[pd]AB[nd]N[High Approach]C[- url: https://senseis.xmp.net/?44PointHighApproach
+- type: corner]CR[ma][mb][mc][md][me][na][nb][nc][ne][oa][ob][oc][od][oe][pa][pb][pc][pe][qa][qb][qc][qd][qe][ra][rb][rc][rd][re][sa][sb][sc][sd][se]MA[nd])(;AB[oc][qd]N[Low Enclosure]C[- url: https://senseis.xmp.net/?3453Enclosure
+- type: corner]CR[ma][mb][mc][md][me][na][nb][nc][nd][ne][oa][ob][od][oe][pa][pb][pc][pd][pe][qa][qb][qc][qe][ra][rb][rc][rd][re][sa][sb][sc][sd][se]MA[oc][qd])(;AB[nc][pd]N[Low Enclosure]C[- url: https://senseis.xmp.net/?4463Enclosure
+- type: corner]CR[ma][na][oa][pa][qa][ra][sa][mb][nb][ob][pb][qb][rb][sb][mc][oc][pc][qc][rc][sc][md][nd][od][qd][rd][sd][me][ne][oe][pe][qe][re][se]MA[nc][pd])(;AB[od][qd]N[High Enclosure]C[- url: https://senseis.xmp.net/?3454Enclosure
+- type: corner]CR[ma][mb][mc][md][me][na][nb][nc][nd][ne][oa][ob][oc][oe][pa][pb][pc][pd][pe][qa][qb][qc][qe][ra][rb][rc][rd][re][sa][sb][sc][sd][se]MA[od][qd])(;AB[nd][pd]N[High Enclosure]C[- url: https://senseis.xmp.net/?4464Enclosure
+- type: corner]CR[la][lb][lc][ld][le][ma][mb][mc][md][me][na][nb][nc][ne][oa][ob][oc][od][oe][pa][pb][pc][pe][qa][qb][qc][qd][qe][ra][rb][rc][rd][re][sa][sb][sc][sd][se]MA[nd][pd])(;AB[nc][qd]N[Low Enclosure]C[- url: https://senseis.xmp.net/?3463Enclosure
+- type: corner]CR[ma][na][oa][pa][qa][ra][sa][mb][nb][ob][pb][qb][rb][sb][mc][oc][pc][qc][rc][sc][md][nd][od][pd][rd][sd][me][ne][oe][pe][qe][re][se]MA[nc][qd])(;AB[mc][pd]N[Low Enclosure]C[- url: https://senseis.xmp.net/?4473Enclosure
+- type: corner]CR[la][ma][na][oa][pa][qa][ra][sa][lb][mb][nb][ob][pb][qb][rb][sb][lc][nc][oc][pc][qc][rc][sc][ld][md][nd][od][qd][rd][sd][le][me][ne][oe][pe][qe][re][se]MA[mc][pd])(;AB[nd][qd]N[High Enclosure]C[- url: https://senseis.xmp.net/?3464Enclosure
+- type: corner]CR[ma][na][oa][pa][qa][ra][sa][mb][nb][ob][pb][qb][rb][sb][mc][nc][oc][pc][qc][rc][sc][md][od][pd][rd][sd][me][ne][oe][pe][qe][re][se]MA[nd][qd])(;AB[md][pd]N[High Enclosure]C[- url: https://senseis.xmp.net/?4474Enclosure
+- type: corner]CR[la][ma][na][oa][pa][qa][ra][sa][lb][mb][nb][ob][pb][qb][rb][sb][lc][mc][nc][oc][pc][qc][rc][sc][ld][nd][od][qd][rd][sd][le][me][ne][oe][pe][qe][re][se]MA[md][pd])(;AB[dd][de][ef][ff][fd]N[Mouth Shape]CR[ec][ed][fe][ge]MA[dd][fd][de][ef][ff]C[- url: https://senseis.xmp.net/?MouthShape])(;AB[dd][de][fd][ff]N[Table Shape]MA[dd][fd][de][ff]CR[ed][ee][fe][ge]C[- url: https://senseis.xmp.net/?TableShape])(;AB[dd][ed][df][fg]N[Tippy Table]CR[de][ee][ef][ff]MA[fg]C[- url: https://senseis.xmp.net/?TippyTable])(;AB[dd][ed][df][ef]N[Bamboo Joint]MA[dd][ed][df][ef]CR[de][ee]C[- url: https://senseis.xmp.net/?BambooJoint])(;AB[dd][de][fd][ge]N[Trapezium]CR[ed][gd][ee][fe][ff]MA[fd][ge]C[- url: https://senseis.xmp.net/?TrapeziumShape])(;AB[dd][ce][ee][df]N[Diamond]MA[dd][ce][ee][df]CR[de]C[- url: https://senseis.xmp.net/?Diamond])(;AB[dd][ee][fd]N[Tiger’s Mouth]CR[ec][ed]MA[dd][fd][ee]C[- url: https://senseis.xmp.net/?TigersMouth])(;AB[dd][de][ed]N[Empty Triangle]MA[dd][ed][de]CR[ee]C[- url: https://senseis.xmp.net/?EmptyTriangle])(;AB[dd][ed][ee]AW[de]N[Turn]MA[dd][ee]C[- url: https://senseis.xmp.net/?Turn])(;AB[dd][de]N[Stretch]MA[dd][de]C[- url: https://senseis.xmp.net/?Stretch])(;AB[dd][ee]N[Diagonal]MA[dd][ee]CR[ed][de]C[- url: https://senseis.xmp.net/?Kosumi])(;AB[dd]AW[ed][cd]N[Wedge]CR[dc][de]MA[dd]C[- url: https://senseis.xmp.net/?Wedge])(;AB[dd][ee]AW[ed]N[Hane]MA[dd][ee]CR[de]C[- url: https://senseis.xmp.net/?Hane])(;AB[dd][ee]AW[ed][de]N[Cut]MA[dd][ee]C[- url: https://senseis.xmp.net/?Cut])(;AB[dd][fd][ff][df]N[Square]C[- url: https://senseis.xmp.net/?SquareGoodShape]MA[dd][df][fd][ff]CR[de][ed][ee][fe])(;AB[dd][ef][fc][ge]N[Throwing Star]C[- url: https://senseis.xmp.net/?ThrowingStarShape]AE[fd][ff][df]MA[dd][ef][fc][ge]CR[de][ec][ed][ee][fd][fe][ff][gd])(;AB[dd][fe][df][fg]N[Parallelogram]MA[dd][fe][df][fg]CR[ee][ef]C[- url: https://senseis.xmp.net/?Parallelogram])(;AB[dd][df][fe]N[Dog’s Head]MA[dd][fe][df]CR[ed][de][ee][ef]C[- url: https://senseis.xmp.net/?SakeBottleShape])(;AB[dd][df][ge]N[Horse’s Head]MA[dd][ge][df]CR[ed][de][ee][fe][ef]C[- url: https://senseis.xmp.net/?HorseHead])(;AB[dd]AW[ed]N[Attachment]CR[dc][ec][de][ee]MA[dd]C[- url: https://senseis.xmp.net/?Attachment])(;AB[dd][fd]N[One-Point Jump]MA[dd][fd]CR[ed]C[- url: https://senseis.xmp.net/?OnePointJump])(;AB[dd][fe][eg]N[Big Bulge]MA[dd][fe][eg]CR[ee][ef]C[- url: https://senseis.xmp.net/?BigBulge])(;AB[dd][fe]N[Small Knight]MA[dd][fe]CR[ed][ee]C[- url: https://senseis.xmp.net/?Keima])(;AB[dd][gd]N[Two-Point Jump]MA[dd][gd]CR[ed][fd]C[- url: https://senseis.xmp.net/?TwoPointJump])(;AB[dd][ge]N[Large Knight]MA[dd][ge]CR[ed][fd][ee][fe]C[- url: https://senseis.xmp.net/?LargeKnightsMove])(;PL[B]N[3-3 Point Invasion]C[- url: https://senseis.xmp.net/?SanSanInvasion
+- type: corner]AE[dd]AB[qc]CR[na][nb][nc][nd][oa][ob][oc][od][oe][pa][pb][pc][pe][pf][qa][qb][qd][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[qc]AW[pd])(;AB[dd]AW[ee]N[Shoulder Hit]CR[cc][dc][ec][cd][ed][ce][de]MA[dd]C[- url: https://senseis.xmp.net/?ShoulderHit])(;AB[dd][ff]N[Diagonal Jump]MA[dd][ff]CR[ed][de][ee][fe][ef]C[- url: https://senseis.xmp.net/?DiagonalJump])(;PL[B]N[3-4 Point]C[- url: https://senseis.xmp.net/?Komoku
+- type: corner]AE[dd][pd]AB[qd]CR[na][nb][nc][nd][oa][ob][oc][od][oe][pa][pb][pc][pd][pe][pf][qa][qb][qc][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[qd])(;PL[B]N[4-4 Point]C[- url: https://senseis.xmp.net/?44Point
+- type: corner]AE[dd]AB[pd]CR[na][nb][nc][nd][oa][ob][oc][od][oe][pa][pb][pc][pe][pf][qa][qb][qc][qd][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[pd])(;PL[B]N[3-3 Point]C[- url: https://senseis.xmp.net/?Sansan
+- type: corner]AE[dd][pd]AB[qc]CR[na][nb][nc][nd][oa][ob][oc][od][oe][pa][pb][pc][pd][pe][pf][qa][qb][qd][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[qc])(;PL[B]N[3-5 Point]C[- url: https://senseis.xmp.net/?Mokuhazushi
+- type: corner]AE[dd][pd]AB[qe]CR[na][nb][nc][nd][oa][ob][oc][od][oe][pa][pb][pc][pd][pe][pf][qa][qb][qc][qd][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[qe])(;PL[B]N[4-5 Point]C[- url: https://senseis.xmp.net/?Takamoku
+- type: corner]AE[dd][pd]AB[pe]CR[na][nb][nc][nd][oa][ob][oc][od][oe][pa][pb][pc][pd][pf][qa][qb][qc][qd][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[pe])(;PL[B]N[6-3 Point]C[- url: https://senseis.xmp.net/?Omokuhazushi
+- type: corner]AE[dd][pd]AB[qf]CR[na][nb][nc][nd][oa][ob][oc][od][oe][pa][pb][pc][pd][pe][pf][qa][qb][qc][qd][qe][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[qf])(;PL[B]N[6-4 Point]C[- url: https://senseis.xmp.net/?Otakamoku
+- type: corner]AE[dd][pd]AB[pf]CR[na][nb][nc][nd][oa][ob][oc][od][oe][pa][pb][pc][pd][pe][qa][qb][qc][qd][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[pf])(;PL[B]N[5-5 Point]C[- url: https://senseis.xmp.net/?Gonogo
+- type: corner]AE[dd][pd]AB[oe]CR[na][nb][nc][nd][oa][ob][oc][od][pa][pb][pc][pd][pe][pf][qa][qb][qc][qd][qe][qf][ra][rb][rc][rd][re][rf][sa][sb][sc][sd][se][sf]MA[oe]))
