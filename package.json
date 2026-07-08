@@ -40,8 +40,8 @@
   },
   "devDependencies": {
     "@sabaki/sgf": "^3.4.4",
-    "onchange": "^6.1.0",
-    "prettier": "^2.1.2",
+    "onchange": "^7.1.0",
+    "prettier": "^3.9.4",
     "tap": "^21.7.4"
   }
 }
